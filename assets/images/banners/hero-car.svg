@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900">
+  <defs>
+    <radialGradient id="heroGlow" cx="65%" cy="50%" r="55%">
+      <stop offset="0%" stop-color="#1A202C"/>
+      <stop offset="60%" stop-color="#0B0D12"/>
+      <stop offset="100%" stop-color="#050608"/>
+    </radialGradient>
+    <linearGradient id="goldH" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#AA820A"/>
+      <stop offset="50%" stop-color="#D4AF37"/>
+      <stop offset="100%" stop-color="#F3E7C4"/>
+    </linearGradient>
+    <linearGradient id="beam" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="rgba(212, 175, 55, 0.12)"/>
+      <stop offset="100%" stop-color="transparent"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="900" fill="url(#heroGlow)"/>
+  
+  <!-- Architectural showroom light beams -->
+  <polygon points="400,0 600,0 1200,900 800,900" fill="url(#beam)"/>
+  <polygon points="900,0 1100,0 1600,700 1400,900" fill="url(#beam)" opacity="0.6"/>
+  
+  <!-- Floor Grid Perspective -->
+  <line x1="0" y1="650" x2="1600" y2="650" stroke="#1F2430" stroke-width="1.5"/>
+  <line x1="0" y1="720" x2="1600" y2="720" stroke="#1A1F29" stroke-width="1"/>
+  <line x1="0" y1="800" x2="1600" y2="800" stroke="#151922" stroke-width="1"/>
+  <line x1="800" y1="650" x2="400" y2="900" stroke="#181D26" stroke-width="1"/>
+  <line x1="800" y1="650" x2="1200" y2="900" stroke="#181D26" stroke-width="1"/>
+
+  <!-- Luxury Sports Car Front/Angle Silhouette -->
+  <!-- Floor reflection -->
+  <ellipse cx="980" cy="690" rx="460" ry="40" fill="#020304" opacity="0.9"/>
+  <!-- Front Hood & Windshield -->
+  <path d="M680,560 C720,440 850,390 1020,385 C1180,385 1300,430 1340,550 Z" fill="#11141B" stroke="#2D3748" stroke-width="2"/>
+  <path d="M730,550 C770,455 870,410 1015,405 C1150,405 1250,445 1290,545 Z" fill="#181E29" opacity="0.85"/>
+  <path d="M520,620 C540,560 620,530 820,515 C1020,500 1200,515 1360,540 C1430,560 1460,620 1420,650 C1380,670 1290,675 1190,675 C1120,620 980,620 920,675 L620,675 C580,675 530,660 520,620 Z" fill="#141720" stroke="#374151" stroke-width="2.5"/>
+  
+  <!-- Sleek Headlights with Laser Blue and Gold Accents -->
+  <path d="M550,595 L640,580 L620,605 Z" fill="#67E8F9" filter="drop-shadow(0 0 8px #38BDF8)"/>
+  <path d="M1390,595 L1300,580 L1320,605 Z" fill="#67E8F9" filter="drop-shadow(0 0 8px #38BDF8)"/>
+  
+  <!-- Grille & Gold Emblem -->
+  <path d="M850,560 C900,555 1040,555 1090,560 L1070,635 C1010,645 930,645 870,635 Z" fill="#0C0E13" stroke="url(#goldH)" stroke-width="2"/>
+  <circle cx="970" cy="590" r="14" fill="#1A1F2B" stroke="url(#goldH)" stroke-width="2"/>
+  <polygon points="970,580 978,598 962,598" fill="url(#goldH)"/>
+
+  <!-- Left Wheel Profile -->
+  <ellipse cx="610" cy="650" rx="55" ry="38" fill="#0D0E13" stroke="#4A5568" stroke-width="4"/>
+  <!-- Right Wheel Profile -->
+  <ellipse cx="1320" cy="650" rx="55" ry="38" fill="#0D0E13" stroke="#4A5568" stroke-width="4"/>
+
+  <!-- Light flares -->
+  <circle cx="560" cy="592" r="5" fill="#FFFFFF"/>
+  <circle cx="1380" cy="592" r="5" fill="#FFFFFF"/>
+</svg>

@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#181B22"/>
+      <stop offset="100%" stop-color="#0A0B0E"/>
+    </linearGradient>
+    <linearGradient id="carBody" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2D3342"/>
+      <stop offset="50%" stop-color="#1B1F2A"/>
+      <stop offset="100%" stop-color="#0E1118"/>
+    </linearGradient>
+    <linearGradient id="goldAcc" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#AA820A"/>
+      <stop offset="50%" stop-color="#D4AF37"/>
+      <stop offset="100%" stop-color="#F3E7C4"/>
+    </linearGradient>
+    <radialGradient id="lightGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="rgba(212, 175, 55, 0.15)"/>
+      <stop offset="100%" stop-color="transparent"/>
+    </radialGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#bgGrad)"/>
+  <!-- Ambient light -->
+  <circle cx="400" cy="270" r="280" fill="url(#lightGlow)"/>
+  <!-- Studio Reflection Floor -->
+  <ellipse cx="400" cy="405" rx="340" ry="32" fill="#050608"/>
+  <ellipse cx="400" cy="402" rx="310" ry="20" fill="#000000" opacity="0.8"/>
+  
+  <!-- Sleek Car Silhouette -->
+  <!-- Car Roof & Windows -->
+  <path d="M250,280 C270,225 330,195 440,195 C520,195 560,225 610,270 Z" fill="#12151C" stroke="#374151" stroke-width="2"/>
+  <!-- Window Glass -->
+  <path d="M280,275 C300,230 350,205 435,205 C500,205 535,225 575,270 Z" fill="#1E2430" opacity="0.85"/>
+  <line x1="430" y1="205" x2="430" y2="273" stroke="#0D0E12" stroke-width="3"/>
+  <!-- Main Body Silhouette -->
+  <path d="M120,335 C130,310 160,300 230,290 C290,285 360,275 480,275 C570,275 630,280 675,300 C710,315 720,340 705,360 C690,370 655,375 620,375 C600,340 550,340 530,375 L280,375 C260,340 210,340 190,375 C150,375 130,370 120,355 Z" fill="url(#carBody)" stroke="#3E4556" stroke-width="2"/>
+  <!-- Shoulder line / Gold Accent -->
+  <path d="M140,325 C240,305 480,295 680,320" fill="none" stroke="url(#goldAcc)" stroke-width="2.5" opacity="0.9"/>
+  <!-- Headlight glow -->
+  <polygon points="125,335 155,330 145,342" fill="#8CE8FF"/>
+  <polygon points="685,325 700,332 680,340" fill="#EF4444"/>
+  <!-- Wheels -->
+  <!-- Front Wheel -->
+  <circle cx="235" cy="375" r="45" fill="#111" stroke="#4B5563" stroke-width="4"/>
+  <circle cx="235" cy="375" r="32" fill="#1A1F2B" stroke="url(#goldAcc)" stroke-width="2"/>
+  <circle cx="235" cy="375" r="12" fill="#D4AF37"/>
+  <!-- Rear Wheel -->
+  <circle cx="575" cy="375" r="45" fill="#111" stroke="#4B5563" stroke-width="4"/>
+  <circle cx="575" cy="375" r="32" fill="#1A1F2B" stroke="url(#goldAcc)" stroke-width="2"/>
+  <circle cx="575" cy="375" r="12" fill="#D4AF37"/>
+  <!-- Showroom Watermark Badge -->
+  <text x="400" y="460" fill="#64748B" font-family="'Plus Jakarta Sans', sans-serif" font-weight="600" font-size="14" letter-spacing="4" text-anchor="middle">MAMUN AUTOS • VERIFIED VEHICLE</text>
+</svg>

@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <defs>
+    <linearGradient id="bgEV" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#121824"/>
+      <stop offset="100%" stop-color="#080C14"/>
+    </linearGradient>
+    <linearGradient id="cyanEV" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#06B6D4"/>
+      <stop offset="50%" stop-color="#38BDF8"/>
+      <stop offset="100%" stop-color="#D4AF37"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#bgEV)"/>
+  <ellipse cx="400" cy="405" rx="330" ry="25" fill="#000" opacity="0.8"/>
+  <!-- Smooth Aerodynamic Glasshouse -->
+  <path d="M240,285 C280,215 350,190 470,190 C550,190 600,225 650,280 Z" fill="#15202E" stroke="#0284C7" stroke-width="2"/>
+  <path d="M275,280 C310,225 370,200 460,200 C530,200 570,225 615,275 Z" fill="#1C2D42" opacity="0.85"/>
+  <!-- EV Sleek Body (No front grill) -->
+  <path d="M120,340 C130,310 180,295 250,285 C330,280 430,275 540,275 C630,275 680,290 710,315 C730,335 725,365 700,375 C680,345 630,345 610,375 L280,375 C260,345 210,345 190,375 C140,375 120,365 120,340 Z" fill="#161E2E" stroke="#38BDF8" stroke-width="2"/>
+  <path d="M130,330 C250,305 480,295 690,320" fill="none" stroke="url(#cyanEV)" stroke-width="2.5"/>
+  <!-- EV Aero Wheels -->
+  <circle cx="235" cy="375" r="44" fill="#0B1320" stroke="#38BDF8" stroke-width="4"/>
+  <circle cx="235" cy="375" r="28" fill="#1E293B" stroke="#D4AF37" stroke-width="2"/>
+  <circle cx="655" cy="375" r="44" fill="#0B1320" stroke="#38BDF8" stroke-width="4"/>
+  <circle cx="655" cy="375" r="28" fill="#1E293B" stroke="#D4AF37" stroke-width="2"/>
+  <!-- Lightning Icon Glow -->
+  <polygon points="400,240 390,265 402,265 395,290 415,260 403,260" fill="#38BDF8" filter="drop-shadow(0 0 8px #0EA5E9)"/>
+  <text x="400" y="460" fill="#38BDF8" font-family="'Plus Jakarta Sans', sans-serif" font-weight="700" font-size="13" letter-spacing="4" text-anchor="middle">NEXT-GEN ALL-ELECTRIC POWERTRAIN</text>
+</svg>

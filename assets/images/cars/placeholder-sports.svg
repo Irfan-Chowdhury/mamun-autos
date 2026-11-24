@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <defs>
+    <linearGradient id="bgSp" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1A1C24"/>
+      <stop offset="100%" stop-color="#08090C"/>
+    </linearGradient>
+    <linearGradient id="goldSp" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#AA820A"/>
+      <stop offset="50%" stop-color="#D4AF37"/>
+      <stop offset="100%" stop-color="#F3E7C4"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#bgSp)"/>
+  <ellipse cx="400" cy="405" rx="340" ry="25" fill="#000" opacity="0.8"/>
+  <!-- Low Aggressive Sports Coupe Profile -->
+  <path d="M260,290 C300,210 380,185 500,185 C570,185 620,230 680,290 Z" fill="#1C212E" stroke="#374151" stroke-width="2"/>
+  <path d="M290,285 C330,220 395,200 490,200 C550,200 590,235 635,285 Z" fill="#252D3E" opacity="0.85"/>
+  <!-- Sports Aerodynamic Body -->
+  <path d="M100,345 C110,320 150,310 240,295 C340,285 450,280 570,280 C670,280 720,300 735,330 C745,350 730,375 700,375 C680,340 630,340 610,375 L280,375 C260,340 210,340 190,375 C140,375 110,365 100,345 Z" fill="#181D29" stroke="#4B5563" stroke-width="2"/>
+  <path d="M110,335 C230,310 470,295 720,325" fill="none" stroke="url(#goldSp)" stroke-width="2.5"/>
+  <!-- Rear Spoiler Wing -->
+  <polygon points="690,270 735,270 725,285 680,285" fill="url(#goldSp)"/>
+  <rect x="705" y="285" width="8" height="25" fill="#333"/>
+  <!-- Racing Wheels with Gold Rims -->
+  <circle cx="235" cy="375" r="44" fill="#111" stroke="#4B5563" stroke-width="4"/>
+  <circle cx="235" cy="375" r="30" fill="#1A1F2B" stroke="url(#goldSp)" stroke-width="3"/>
+  <circle cx="655" cy="375" r="44" fill="#111" stroke="#4B5563" stroke-width="4"/>
+  <circle cx="655" cy="375" r="30" fill="#1A1F2B" stroke="url(#goldSp)" stroke-width="3"/>
+  <text x="400" y="460" fill="#64748B" font-family="'Plus Jakarta Sans', sans-serif" font-weight="700" font-size="13" letter-spacing="4" text-anchor="middle">TRACK-PROVEN SPORTS PERFORMANCE</text>
+</svg>

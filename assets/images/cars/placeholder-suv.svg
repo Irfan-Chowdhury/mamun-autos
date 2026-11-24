@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <defs>
+    <linearGradient id="bgSUV" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#181B24"/>
+      <stop offset="100%" stop-color="#0A0B0E"/>
+    </linearGradient>
+    <linearGradient id="goldSUV" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#AA820A"/>
+      <stop offset="50%" stop-color="#D4AF37"/>
+      <stop offset="100%" stop-color="#F3E7C4"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#bgSUV)"/>
+  <ellipse cx="400" cy="415" rx="350" ry="25" fill="#000" opacity="0.8"/>
+  <!-- Tall SUV Cabin Roof & Windows -->
+  <path d="M220,260 L310,165 L610,165 L670,270 Z" fill="#1C212E" stroke="#374151" stroke-width="2"/>
+  <path d="M255,255 L325,175 L600,175 L645,260 Z" fill="#2A3244" opacity="0.85"/>
+  <line x1="430" y1="175" x2="430" y2="255" stroke="#111" stroke-width="4"/>
+  <line x1="530" y1="175" x2="530" y2="255" stroke="#111" stroke-width="3"/>
+  <!-- SUV High Ground Clearance Body -->
+  <path d="M100,320 C110,290 150,280 220,270 C300,260 400,260 550,260 C640,260 690,275 720,300 C740,320 735,350 710,370 C680,380 655,385 625,385 C605,340 545,340 525,385 L285,385 C265,340 205,340 185,385 C135,385 115,375 100,350 Z" fill="#1B202B" stroke="#4B5563" stroke-width="2"/>
+  <path d="M110,315 C240,285 500,280 710,315" fill="none" stroke="url(#goldSUV)" stroke-width="2.5"/>
+  <!-- High Clearance Wheels -->
+  <circle cx="235" cy="385" r="50" fill="#111" stroke="#4B5563" stroke-width="5"/>
+  <circle cx="235" cy="385" r="34" fill="#1A1F2B" stroke="url(#goldSUV)" stroke-width="2.5"/>
+  <circle cx="575" cy="385" r="50" fill="#111" stroke="#4B5563" stroke-width="5"/>
+  <circle cx="575" cy="385" r="34" fill="#1A1F2B" stroke="url(#goldSUV)" stroke-width="2.5"/>
+  <!-- Roof Rails -->
+  <rect x="330" y="155" width="270" height="6" rx="3" fill="url(#goldSUV)"/>
+  <text x="400" y="470" fill="#64748B" font-family="'Plus Jakarta Sans', sans-serif" font-weight="700" font-size="13" letter-spacing="4" text-anchor="middle">PREMIUM ALL-TERRAIN SUV</text>
+</svg>

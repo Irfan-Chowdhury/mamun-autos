@@ -1,0 +1,847 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mamun Autos | Premium & Luxury Multi-Brand Car Showroom</title>
+  <meta name="description" content="Discover premium luxury and sports automobiles at Mamun Autos. Authorized international multi-brand car showroom featuring Mercedes-Benz, BMW, Porsche, Audi, Range Rover, and Toyota.">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/images/brands/mercedes.svg">
+  
+  <!-- Google Fonts: Outfit & Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Bootstrap 5.3 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- Top Announcement Bar -->
+  <div class="top-bar py-2 d-none d-md-block">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-7">
+          <div class="d-flex align-items-center gap-4">
+            <span><i class="fa-solid fa-location-dot text-gold me-2"></i>Plot 45, Gulshan Avenue, Dhaka, Bangladesh</span>
+            <span><i class="fa-regular fa-clock text-gold me-2"></i>Mon - Sat: 9:00 AM - 9:00 PM</span>
+          </div>
+        </div>
+        <div class="col-md-5 text-end">
+          <div class="d-flex align-items-center justify-content-end gap-3">
+            <a href="tel:+8801711000000"><i class="fa-solid fa-phone text-gold me-1"></i> +880 1711-000000</a>
+            <span class="text-secondary">|</span>
+            <div class="d-inline-flex gap-2">
+              <a href="https://facebook.com" target="_blank" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="https://instagram.com" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+              <a href="https://youtube.com" target="_blank" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Navigation Bar -->
+  <nav class="navbar navbar-expand-lg navbar-custom sticky-top">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="index.html">
+        <img src="assets/images/logo.svg" alt="Mamun Autos Logo" height="42">
+      </a>
+      
+      <button class="navbar-toggler border-0 text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fa-solid fa-bars fs-3 text-gold"></i>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarContent">
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="inventory.html">Inventory</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="brands.html">Brands</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#categoriesSection">Categories</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+        </ul>
+        
+        <div class="d-flex align-items-center gap-3">
+          <a href="inventory.html" class="btn btn-gold text-dark px-3 py-2 fw-semibold">
+            <i class="fa-solid fa-car me-2"></i> Browse Cars
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="hero-section">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-7 mb-5 mb-lg-0">
+          <span class="hero-badge mb-3">
+            <i class="fa-solid fa-shield-halved"></i> Premier Multi-Brand Showroom
+          </span>
+          <h1 class="hero-title">Find Your Perfect Drive.</h1>
+          <p class="hero-lead">
+            Experience automotive excellence with our meticulously curated collection of world-class luxury, executive, and sports vehicles. Certified inspections, verified history, and unparalleled customer service.
+          </p>
+          <div class="d-flex flex-wrap gap-3">
+            <a href="inventory.html" class="btn btn-gold btn-lg px-4 py-3">
+              <i class="fa-solid fa-compass me-2"></i> Explore Our Inventory
+            </a>
+            <a href="contact.html" class="btn btn-outline-light btn-lg px-4 py-3">
+              <i class="fa-solid fa-headset me-2"></i> Contact Us
+            </a>
+          </div>
+        </div>
+        
+        <div class="col-lg-5">
+          <!-- Hero Search Box -->
+          <div class="hero-search-box">
+            <div class="d-flex align-items-center gap-2 mb-3">
+              <i class="fa-solid fa-magnifying-glass text-gold fs-5"></i>
+              <h5 class="text-white mb-0 font-heading">Find In Showroom</h5>
+            </div>
+            
+            <form id="heroSearchForm" class="row g-3">
+              <div class="col-12">
+                <label for="heroSearchBrand" class="form-label">Brand</label>
+                <select id="heroSearchBrand" class="form-select">
+                  <option value="all">All Brands</option>
+                  <option value="Mercedes-Benz">Mercedes-Benz</option>
+                  <option value="BMW">BMW</option>
+                  <option value="Porsche">Porsche</option>
+                  <option value="Audi">Audi</option>
+                  <option value="Land Rover">Land Rover</option>
+                  <option value="Lexus">Lexus</option>
+                  <option value="Toyota">Toyota</option>
+                  <option value="Honda">Honda</option>
+                  <option value="Nissan">Nissan</option>
+                  <option value="Hyundai">Hyundai</option>
+                </select>
+              </div>
+
+              <div class="col-md-6">
+                <label for="heroSearchCategory" class="form-label">Category</label>
+                <select id="heroSearchCategory" class="form-select">
+                  <option value="all">All Categories</option>
+                  <option value="Sedan">Sedan</option>
+                  <option value="SUV">SUV</option>
+                  <option value="Sports Car">Sports Car</option>
+                  <option value="Luxury Car">Luxury Car</option>
+                  <option value="Electric Vehicle">Electric Vehicle</option>
+                </select>
+              </div>
+
+              <div class="col-md-6">
+                <label for="heroSearchPrice" class="form-label">Max Budget</label>
+                <select id="heroSearchPrice" class="form-select">
+                  <option value="all">Any Price</option>
+                  <option value="40000">Under $40,000</option>
+                  <option value="70000">Under $70,000</option>
+                  <option value="100000">Under $100,000</option>
+                  <option value="150000">Under $150,000</option>
+                </select>
+              </div>
+
+              <div class="col-12 mt-4">
+                <button type="submit" class="btn btn-gold w-100 py-3 fw-bold">
+                  <i class="fa-solid fa-sliders me-2"></i> Search Available Cars
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Key Statistics Ribbon -->
+  <section class="stats-ribbon">
+    <div class="container">
+      <div class="row g-4 text-center">
+        <div class="col-6 col-md-3">
+          <div class="stat-item">
+            <h3>500+</h3>
+            <p>Luxury Cars Delivered</p>
+          </div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="stat-item">
+            <h3>15+</h3>
+            <p>Global Brands Available</p>
+          </div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="stat-item">
+            <h3>150-Point</h3>
+            <p>Certified Inspection</p>
+          </div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="stat-item">
+            <h3>99%</h3>
+            <p>Customer Satisfaction</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Cars Section -->
+  <section class="py-5 bg-white" id="featuredSection">
+    <div class="container py-4">
+      <div class="row align-items-end mb-4">
+        <div class="col-lg-8">
+          <span class="text-gold fw-bold text-uppercase tracking-wider small">Hand-Picked Excellence</span>
+          <h2 class="display-6 fw-bold mb-2">Featured Showroom Vehicles</h2>
+          <div class="gold-divider"></div>
+          <p class="text-muted mb-0">Explore our flagship selection of verified pristine automobiles ready for immediate delivery.</p>
+        </div>
+        <div class="col-lg-4 text-lg-end mt-3 mt-lg-0">
+          <a href="inventory.html" class="btn btn-outline-dark fw-semibold">
+            View All Inventory <i class="fa-solid fa-arrow-right ms-1"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Featured Car Cards Container -->
+      <div class="row g-4" id="homeFeaturedCars">
+        <!-- Rendered dynamically by script -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Browse by Brand Section -->
+  <section class="py-5 bg-light" id="brandsSection">
+    <div class="container py-4">
+      <div class="text-center max-w-700 mx-auto mb-5">
+        <span class="text-gold fw-bold text-uppercase tracking-wider small">World-Class Marques</span>
+        <h2 class="display-6 fw-bold mb-2">Browse by Brand</h2>
+        <div class="gold-divider center"></div>
+        <p class="text-muted">Select from leading German, Japanese, British, and international automotive manufacturers.</p>
+      </div>
+
+      <div class="row g-3 g-md-4">
+        <!-- Brand Cards -->
+        <div class="col-6 col-md-4 col-lg-2-4 col-xl-2">
+          <a href="inventory.html?brand=Mercedes-Benz" class="brand-card">
+            <div class="brand-logo-wrap">
+              <img src="assets/images/brands/mercedes.svg" alt="Mercedes-Benz">
+            </div>
+            <h6 class="brand-name">Mercedes-Benz</h6>
+            <span class="brand-count">3 Vehicles</span>
+          </a>
+        </div>
+        <div class="col-6 col-md-4 col-lg-2-4 col-xl-2">
+          <a href="inventory.html?brand=BMW" class="brand-card">
+            <div class="brand-logo-wrap">
+              <img src="assets/images/brands/bmw.svg" alt="BMW">
+            </div>
+            <h6 class="brand-name">BMW</h6>
+            <span class="brand-count">2 Vehicles</span>
+          </a>
+        </div>
+        <div class="col-6 col-md-4 col-lg-2-4 col-xl-2">
+          <a href="inventory.html?brand=Audi" class="brand-card">
+            <div class="brand-logo-wrap">
+              <img src="assets/images/brands/audi.svg" alt="Audi">
+            </div>
+            <h6 class="brand-name">Audi</h6>
+            <span class="brand-count">3 Vehicles</span>
+          </a>
+        </div>
+        <div class="col-6 col-md-4 col-lg-2-4 col-xl-2">
+          <a href="inventory.html?brand=Porsche" class="brand-card">
+            <div class="brand-logo-wrap">
+              <img src="assets/images/brands/porsche.svg" alt="Porsche">
+            </div>
+            <h6 class="brand-name">Porsche</h6>
+            <span class="brand-count">2 Vehicles</span>
+          </a>
+        </div>
+        <div class="col-6 col-md-4 col-lg-2-4 col-xl-2">
+          <a href="inventory.html?brand=Land%20Rover" class="brand-card">
+            <div class="brand-logo-wrap">
+              <img src="assets/images/brands/land-rover.svg" alt="Land Rover">
+            </div>
+            <h6 class="brand-name">Land Rover</h6>
+            <span class="brand-count">1 Vehicle</span>
+          </a>
+        </div>
+        <div class="col-6 col-md-4 col-lg-2-4 col-xl-2">
+          <a href="inventory.html?brand=Lexus" class="brand-card">
+            <div class="brand-logo-wrap">
+              <img src="assets/images/brands/lexus.svg" alt="Lexus">
+            </div>
+            <h6 class="brand-name">Lexus</h6>
+            <span class="brand-count">2 Vehicles</span>
+          </a>
+        </div>
+        <div class="col-6 col-md-4 col-lg-2-4 col-xl-2">
+          <a href="inventory.html?brand=Toyota" class="brand-card">
+            <div class="brand-logo-wrap">
+              <img src="assets/images/brands/toyota.svg" alt="Toyota">
+            </div>
+            <h6 class="brand-name">Toyota</h6>
+            <span class="brand-count">4 Vehicles</span>
+          </a>
+        </div>
+        <div class="col-6 col-md-4 col-lg-2-4 col-xl-2">
+          <a href="inventory.html?brand=Honda" class="brand-card">
+            <div class="brand-logo-wrap">
+              <img src="assets/images/brands/honda.svg" alt="Honda">
+            </div>
+            <h6 class="brand-name">Honda</h6>
+            <span class="brand-count">1 Vehicle</span>
+          </a>
+        </div>
+        <div class="col-6 col-md-4 col-lg-2-4 col-xl-2">
+          <a href="inventory.html?brand=Nissan" class="brand-card">
+            <div class="brand-logo-wrap">
+              <img src="assets/images/brands/nissan.svg" alt="Nissan">
+            </div>
+            <h6 class="brand-name">Nissan</h6>
+            <span class="brand-count">1 Vehicle</span>
+          </a>
+        </div>
+        <div class="col-6 col-md-4 col-lg-2-4 col-xl-2">
+          <a href="inventory.html?brand=Hyundai" class="brand-card">
+            <div class="brand-logo-wrap">
+              <img src="assets/images/brands/hyundai.svg" alt="Hyundai">
+            </div>
+            <h6 class="brand-name">Hyundai</h6>
+            <span class="brand-count">1 Vehicle</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="text-center mt-4">
+        <a href="brands.html" class="btn btn-outline-gold px-4 py-2">
+          View All Brand Portfolios <i class="fa-solid fa-arrow-right ms-2"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Browse by Category Section -->
+  <section class="py-5 bg-white" id="categoriesSection">
+    <div class="container py-4">
+      <div class="text-center max-w-700 mx-auto mb-5">
+        <span class="text-gold fw-bold text-uppercase tracking-wider small">Tailored to Your Lifestyle</span>
+        <h2 class="display-6 fw-bold mb-2">Browse by Body Type</h2>
+        <div class="gold-divider center"></div>
+        <p class="text-muted">Whether you desire the supreme comfort of a luxury sedan or the commanding presence of an SUV.</p>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-12 col-sm-6 col-lg-3">
+          <a href="inventory.html?category=Sedan" class="category-card">
+            <img src="https://images.unsplash.com/photo-1617814076367-b759c7d7e738?auto=format&fit=crop&w=600&q=80" alt="Sedan Category" onerror="this.src='assets/images/cars/placeholder-car.svg'">
+            <div class="category-overlay">
+              <h5 class="category-title">Sedan</h5>
+              <span class="category-count"><i class="fa-solid fa-car-side me-1"></i> 5 Models Available</span>
+            </div>
+          </a>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-3">
+          <a href="inventory.html?category=SUV" class="category-card">
+            <img src="https://images.unsplash.com/photo-1563720223185-11003d516935?auto=format&fit=crop&w=600&q=80" alt="SUV Category" onerror="this.src='assets/images/cars/placeholder-suv.svg'">
+            <div class="category-overlay">
+              <h5 class="category-title">SUV</h5>
+              <span class="category-count"><i class="fa-solid fa-truck-monster me-1"></i> 8 Models Available</span>
+            </div>
+          </a>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-3">
+          <a href="inventory.html?category=Sports%20Car" class="category-card">
+            <img src="https://images.unsplash.com/photo-1614162692292-7ac56d7f7f1e?auto=format&fit=crop&w=600&q=80" alt="Sports Car Category" onerror="this.src='assets/images/cars/placeholder-sports.svg'">
+            <div class="category-overlay">
+              <h5 class="category-title">Sports Car</h5>
+              <span class="category-count"><i class="fa-solid fa-gauge-high me-1"></i> 3 Models Available</span>
+            </div>
+          </a>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-3">
+          <a href="inventory.html?category=Luxury%20Car" class="category-card">
+            <img src="https://images.unsplash.com/photo-1603584173870-7f23fdae1b7a?auto=format&fit=crop&w=600&q=80" alt="Luxury Car Category" onerror="this.src='assets/images/cars/placeholder-car.svg'">
+            <div class="category-overlay">
+              <h5 class="category-title">Luxury Car</h5>
+              <span class="category-count"><i class="fa-solid fa-gem me-1"></i> 7 Models Available</span>
+            </div>
+          </a>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-3">
+          <a href="inventory.html?category=Electric%20Vehicle" class="category-card">
+            <img src="https://images.unsplash.com/photo-1580273916550-e323be2ae537?auto=format&fit=crop&w=600&q=80" alt="Electric Vehicles" onerror="this.src='assets/images/cars/placeholder-electric.svg'">
+            <div class="category-overlay">
+              <h5 class="category-title">Electric Vehicle</h5>
+              <span class="category-count"><i class="fa-solid fa-bolt-lightning me-1"></i> 2 Models Available</span>
+            </div>
+          </a>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-3">
+          <a href="inventory.html?category=Coupe" class="category-card">
+            <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=600&q=80" alt="Coupe Category" onerror="this.src='assets/images/cars/placeholder-sports.svg'">
+            <div class="category-overlay">
+              <h5 class="category-title">Coupe</h5>
+              <span class="category-count"><i class="fa-solid fa-car me-1"></i> 3 Models Available</span>
+            </div>
+          </a>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-3">
+          <a href="inventory.html?category=Hatchback" class="category-card">
+            <img src="https://images.unsplash.com/photo-1590362891991-f776e747a588?auto=format&fit=crop&w=600&q=80" alt="Hatchback Category" onerror="this.src='assets/images/cars/placeholder-car.svg'">
+            <div class="category-overlay">
+              <h5 class="category-title">Hatchback</h5>
+              <span class="category-count"><i class="fa-solid fa-compact-disc me-1"></i> 1 Model Available</span>
+            </div>
+          </a>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-3">
+          <a href="inventory.html" class="category-card">
+            <img src="https://images.unsplash.com/photo-1555215695-3004980ad54e?auto=format&fit=crop&w=600&q=80" alt="All Collections" onerror="this.src='assets/images/cars/placeholder-car.svg'">
+            <div class="category-overlay">
+              <h5 class="category-title">All Collections</h5>
+              <span class="category-count"><i class="fa-solid fa-border-all me-1"></i> 20+ Total Vehicles</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Choose Us Section -->
+  <section class="py-5 bg-light" id="whyChooseUs">
+    <div class="container py-4">
+      <div class="text-center max-w-700 mx-auto mb-5">
+        <span class="text-gold fw-bold text-uppercase tracking-wider small">The Mamun Autos Advantage</span>
+        <h2 class="display-6 fw-bold mb-2">Why Discerning Clients Trust Us</h2>
+        <div class="gold-divider center"></div>
+        <p class="text-muted">A standard of excellence built on transparent transactions, certified vehicle pedigree, and white-glove automotive care.</p>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-4">
+          <div class="feature-box">
+            <div class="feature-icon-wrap">
+              <i class="fa-solid fa-globe"></i>
+            </div>
+            <h5 class="fw-bold mb-2">Multiple International Brands</h5>
+            <p class="text-muted mb-0">Direct access to Europe and Japan’s finest luxury marques under one single prestigious roof without dealer middlemen.</p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="feature-box">
+            <div class="feature-icon-wrap">
+              <i class="fa-solid fa-clipboard-check"></i>
+            </div>
+            <h5 class="fw-bold mb-2">150-Point Quality Inspection</h5>
+            <p class="text-muted mb-0">Every vehicle undergoes structural, mechanical, diagnostic, and electrical vetting by master automotive technicians.</p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="feature-box">
+            <div class="feature-icon-wrap">
+              <i class="fa-solid fa-tags"></i>
+            </div>
+            <h5 class="fw-bold mb-2">Competitive Transparent Pricing</h5>
+            <p class="text-muted mb-0">Fair market value pricing with zero hidden surcharges, transparent documentation, and seamless ownership transfer.</p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="feature-box">
+            <div class="feature-icon-wrap">
+              <i class="fa-solid fa-handshake"></i>
+            </div>
+            <h5 class="fw-bold mb-2">Dedicated Customer Concierge</h5>
+            <p class="text-muted mb-0">Your private automotive consultant handles viewings, custom registration plates, insurance, and door-to-door handover.</p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="feature-box">
+            <div class="feature-icon-wrap">
+              <i class="fa-solid fa-calculator"></i>
+            </div>
+            <h5 class="fw-bold mb-2">Financing & Trade-In Assistance</h5>
+            <p class="text-muted mb-0">Convenient financing partnerships with premium banks and instant valuation trade-in packages for your current vehicle.</p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="feature-box">
+            <div class="feature-icon-wrap">
+              <i class="fa-solid fa-shield-virus"></i>
+            </div>
+            <h5 class="fw-bold mb-2">Comprehensive Warranty Backup</h5>
+            <p class="text-muted mb-0">Enjoy peace of mind with tailored bumper-to-bumper warranty coverages and priority workshop assistance.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Promotional Banner Section -->
+  <section class="py-5 bg-white">
+    <div class="container py-2">
+      <div class="promo-banner text-white">
+        <div class="row align-items-center">
+          <div class="col-lg-8 mb-4 mb-lg-0">
+            <span class="badge bg-gold mb-3 px-3 py-2 text-dark fw-bold">Limited Time Privileges</span>
+            <h2 class="display-5 fw-bold mb-3 text-white">Your Dream Car Is Waiting.</h2>
+            <p class="lead text-silver mb-0" style="max-width: 650px;">
+              Take advantage of our exclusive financing rates, bespoke delivery service, and complimentary 1-year detailing package on all certified showroom deliveries this month.
+            </p>
+          </div>
+          <div class="col-lg-4 text-lg-end">
+            <div class="d-flex flex-column flex-sm-row flex-lg-column gap-3 justify-content-lg-end">
+              <a href="inventory.html" class="btn btn-gold btn-lg px-4 py-3 fw-bold">
+                <i class="fa-solid fa-car-rear me-2"></i> Explore Inventory
+              </a>
+              <a href="contact.html" class="btn btn-outline-light btn-lg px-4 py-3">
+                <i class="fa-regular fa-calendar-check me-2"></i> Book VIP Test Drive
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Customer Testimonials Section -->
+  <section class="py-5 bg-light" id="testimonialsSection">
+    <div class="container py-4">
+      <div class="text-center max-w-700 mx-auto mb-5">
+        <span class="text-gold fw-bold text-uppercase tracking-wider small">Real Experiences</span>
+        <h2 class="display-6 fw-bold mb-2">What Our Clients Say</h2>
+        <div class="gold-divider center"></div>
+        <p class="text-muted">Discover why distinguished automotive collectors, executives, and families choose Mamun Autos.</p>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="testimonial-card">
+            <div class="client-rating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <p class="text-body mb-4 fst-italic">
+              "Purchased my Mercedes-Benz S-Class from Mamun Autos. The entire experience was immaculate. Complete paperwork transparency, genuine mileage verification, and swift delivery to my residence."
+            </p>
+            <div class="d-flex align-items-center gap-3">
+              <div class="client-avatar bg-dark text-gold d-flex align-items-center justify-content-center fw-bold fs-5">
+                TR
+              </div>
+              <div>
+                <h6 class="mb-0 fw-bold">Tariqur Rahman</h6>
+                <span class="text-muted small">Managing Director, Apex Group</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="testimonial-card">
+            <div class="client-rating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <p class="text-body mb-4 fst-italic">
+              "The 150-point inspection report gave me immense confidence when buying my Range Rover Autobiography. Their consultant handled all BRTA documentation smoothly without any stress."
+            </p>
+            <div class="d-flex align-items-center gap-3">
+              <div class="client-avatar bg-dark text-gold d-flex align-items-center justify-content-center fw-bold fs-5">
+                KA
+              </div>
+              <div>
+                <h6 class="mb-0 fw-bold">Dr. Kazi Ahsan</h6>
+                <span class="text-muted small">Cardiologist & Collector</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="testimonial-card">
+            <div class="client-rating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <p class="text-body mb-4 fst-italic">
+              "Their team sourced an immaculate Porsche 911 Carrera S in Guards Red for me. True automotive enthusiasts who care deeply about vehicle condition and client satisfaction."
+            </p>
+            <div class="d-flex align-items-center gap-3">
+              <div class="client-avatar bg-dark text-gold d-flex align-items-center justify-content-center fw-bold fs-5">
+                SI
+              </div>
+              <div>
+                <h6 class="mb-0 fw-bold">Saadman Islam</h6>
+                <span class="text-muted small">Tech Entrepreneur</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Showroom Visit & Contact Preview -->
+  <section class="py-5 bg-white" id="showroomSection">
+    <div class="container py-4">
+      <div class="row g-5 align-items-center">
+        <div class="col-lg-6">
+          <span class="text-gold fw-bold text-uppercase tracking-wider small">Visit Our Dealership</span>
+          <h2 class="display-6 fw-bold mb-3">Experience True Luxury In Person</h2>
+          <div class="gold-divider"></div>
+          <p class="text-muted mb-4">
+            Our state-of-the-art flagship showroom offers a serene, climate-controlled lounge where you can inspect your desired vehicle in detail, consult our senior advisors, and enjoy a curated espresso.
+          </p>
+
+          <div class="row g-3 mb-4">
+            <div class="col-sm-6">
+              <div class="d-flex gap-3">
+                <i class="fa-solid fa-location-dot text-gold fs-4 mt-1"></i>
+                <div>
+                  <h6 class="fw-bold mb-1">Showroom Address</h6>
+                  <p class="text-muted small mb-0">Plot 45, Gulshan Avenue, Dhaka, Bangladesh</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-6">
+              <div class="d-flex gap-3">
+                <i class="fa-solid fa-clock text-gold fs-4 mt-1"></i>
+                <div>
+                  <h6 class="fw-bold mb-1">Business Hours</h6>
+                  <p class="text-muted small mb-0">Mon - Sat: 9:00 AM - 9:00 PM<br>Sunday: By Appointment</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-6">
+              <div class="d-flex gap-3">
+                <i class="fa-solid fa-phone text-gold fs-4 mt-1"></i>
+                <div>
+                  <h6 class="fw-bold mb-1">Direct Hotline</h6>
+                  <p class="text-muted small mb-0">+880 1711-000000<br>+880 1819-000000</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-6">
+              <div class="d-flex gap-3">
+                <i class="fa-brands fa-whatsapp text-success fs-4 mt-1"></i>
+                <div>
+                  <h6 class="fw-bold mb-1">WhatsApp Concierge</h6>
+                  <p class="text-muted small mb-0">+880 1700-000000<br>(Instant Vehicle Inquiries)</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="ratio ratio-16x9 rounded-4 overflow-hidden border shadow-sm">
+            <iframe 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14606.070624022839!2d90.4125181!3d23.7999222!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c7a0f70deb73%3A0x30c36498f90fe23!2sGulshan%2C%20Dhaka!5e0!3m2!1sen!2sbd!4v1700000000000!5m2!1sen!2sbd" 
+              allowfullscreen="" 
+              loading="lazy" 
+              referrerpolicy="no-referrer-when-downgrade" 
+              title="Mamun Autos Showroom Location">
+            </iframe>
+          </div>
+        </div>
+
+        <div class="col-lg-6">
+          <div class="card p-4 p-md-5 border-0 shadow-lg rounded-4 bg-dark-custom text-white">
+            <h4 class="text-white fw-bold mb-2">Request Showroom Consultation</h4>
+            <p class="text-silver small mb-4">Have an inquiry regarding an available car or wish to schedule a private viewing? Fill out this form and we will get back to you promptly.</p>
+            
+            <form id="contactForm" class="needs-validation" novalidate>
+              <div class="mb-3">
+                <label for="contactName" class="form-label text-silver small text-uppercase">Full Name *</label>
+                <input type="text" class="form-control bg-secondary-dark border-secondary text-white" id="contactName" placeholder="e.g. Tariqur Rahman" required>
+                <div class="invalid-feedback">Please provide your full name.</div>
+              </div>
+
+              <div class="row g-3 mb-3">
+                <div class="col-md-6">
+                  <label for="contactEmail" class="form-label text-silver small text-uppercase">Email Address *</label>
+                  <input type="email" class="form-control bg-secondary-dark border-secondary text-white" id="contactEmail" placeholder="name@domain.com" required>
+                  <div class="invalid-feedback">Please enter a valid email address.</div>
+                </div>
+                <div class="col-md-6">
+                  <label for="contactPhone" class="form-label text-silver small text-uppercase">Phone / Mobile *</label>
+                  <input type="tel" class="form-control bg-secondary-dark border-secondary text-white" id="contactPhone" placeholder="+880 17XX-XXXXXX" required>
+                  <div class="invalid-feedback">Please enter your contact number.</div>
+                </div>
+              </div>
+
+              <div class="mb-3">
+                <label for="contactInterest" class="form-label text-silver small text-uppercase">Vehicle of Interest</label>
+                <select class="form-select bg-secondary-dark border-secondary text-white" id="contactInterest">
+                  <option value="General Inquiry">General Showroom Inquiry</option>
+                  <option value="Mercedes-Benz S-Class">Mercedes-Benz S-Class S580</option>
+                  <option value="BMW 320i M Sport">BMW 320i M Sport</option>
+                  <option value="Porsche Cayenne Turbo GT">Porsche Cayenne Turbo GT</option>
+                  <option value="Land Rover Range Rover">Range Rover Autobiography</option>
+                  <option value="Audi Q5 45 TFSI">Audi Q5 45 TFSI</option>
+                  <option value="Toyota Land Cruiser Prado">Toyota Prado TX-L</option>
+                  <option value="Lexus RX 350">Lexus RX 350 F-Sport</option>
+                  <option value="Porsche 911 Carrera S">Porsche 911 Carrera S</option>
+                  <option value="Other Model">Other Specific Model</option>
+                </select>
+              </div>
+
+              <div class="mb-4">
+                <label for="contactMessage" class="form-label text-silver small text-uppercase">Your Message *</label>
+                <textarea class="form-control bg-secondary-dark border-secondary text-white" id="contactMessage" rows="3" placeholder="Tell us how we can assist you..." required></textarea>
+                <div class="invalid-feedback">Please enter your message.</div>
+              </div>
+
+              <button type="submit" class="btn btn-gold w-100 py-3 fw-bold">
+                <i class="fa-solid fa-paper-plane me-2"></i> Submit Inquiry
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer-custom">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-4 col-md-6">
+          <a href="index.html" class="d-inline-block mb-3">
+            <img src="assets/images/logo.svg" alt="Mamun Autos" height="42">
+          </a>
+          <p class="text-silver pe-lg-4">
+            Mamun Autos is Bangladesh’s premier multi-brand luxury automotive dealership, providing discerning drivers with certified vehicles, transparent pricing, and world-class customer service.
+          </p>
+          <div class="social-links-wrap mt-3">
+            <a href="https://facebook.com" target="_blank" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://instagram.com" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://youtube.com" target="_blank" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+            <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://wa.me/8801700000000" target="_blank" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-6 col-6">
+          <h5 class="footer-title">Quick Links</h5>
+          <ul class="footer-links">
+            <li><a href="index.html"><i class="fa-solid fa-chevron-right text-gold me-1 small"></i> Home</a></li>
+            <li><a href="inventory.html"><i class="fa-solid fa-chevron-right text-gold me-1 small"></i> Full Inventory</a></li>
+            <li><a href="brands.html"><i class="fa-solid fa-chevron-right text-gold me-1 small"></i> Car Brands</a></li>
+            <li><a href="about.html"><i class="fa-solid fa-chevron-right text-gold me-1 small"></i> About Our Story</a></li>
+            <li><a href="contact.html"><i class="fa-solid fa-chevron-right text-gold me-1 small"></i> Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-6">
+          <h5 class="footer-title">Popular Marques</h5>
+          <ul class="footer-links">
+            <li><a href="inventory.html?brand=Mercedes-Benz"><i class="fa-solid fa-chevron-right text-gold me-1 small"></i> Mercedes-Benz</a></li>
+            <li><a href="inventory.html?brand=BMW"><i class="fa-solid fa-chevron-right text-gold me-1 small"></i> BMW</a></li>
+            <li><a href="inventory.html?brand=Porsche"><i class="fa-solid fa-chevron-right text-gold me-1 small"></i> Porsche</a></li>
+            <li><a href="inventory.html?brand=Audi"><i class="fa-solid fa-chevron-right text-gold me-1 small"></i> Audi</a></li>
+            <li><a href="inventory.html?brand=Land%20Rover"><i class="fa-solid fa-chevron-right text-gold me-1 small"></i> Land Rover</a></li>
+            <li><a href="inventory.html?brand=Toyota"><i class="fa-solid fa-chevron-right text-gold me-1 small"></i> Toyota</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <h5 class="footer-title">Showroom Concierge</h5>
+          <ul class="footer-links mb-3">
+            <li class="d-flex align-items-start gap-2 mb-2">
+              <i class="fa-solid fa-location-dot text-gold mt-1"></i>
+              <span>Plot 45, Gulshan Avenue, Dhaka, Bangladesh</span>
+            </li>
+            <li class="d-flex align-items-center gap-2 mb-2">
+              <i class="fa-solid fa-phone text-gold"></i>
+              <span>+880 1711-000000</span>
+            </li>
+            <li class="d-flex align-items-center gap-2 mb-2">
+              <i class="fa-solid fa-envelope text-gold"></i>
+              <span>inquiry@mamunautos.com</span>
+            </li>
+          </ul>
+          <div class="p-3 rounded-3 bg-secondary-dark border border-secondary">
+            <span class="text-white small fw-bold d-block mb-1">VIP Viewing Hours</span>
+            <span class="text-silver small">Mon - Sat: 9:00 AM - 9:00 PM</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom d-flex flex-column flex-md-row justify-content-between align-items-center text-silver">
+        <p class="mb-2 mb-md-0">© 2026 Mamun Autos. All Rights Reserved. Excellence in Motion.</p>
+        <p class="mb-0">Designed for Premium Automotive Experience.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp Button -->
+  <a href="https://wa.me/8801700000000?text=Hello%20Mamun%20Autos,%20I%20would%20like%20to%20inquire%20about%20your%20available%20cars" 
+     class="whatsapp-float" 
+     target="_blank" 
+     aria-label="Chat on WhatsApp" 
+     title="Chat with Mamun Autos Concierge">
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
+
+  <!-- Back to Top Button -->
+  <button id="backToTopBtn" class="back-to-top" aria-label="Back to top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <!-- Bootstrap 5.3 Bundle JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  
+  <!-- Car Database & Core Scripts -->
+  <script src="assets/js/cars-data.js"></script>
+  <script src="assets/js/main.js"></script>
+
+  <!-- Homepage Featured Cars Script -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const container = document.getElementById('homeFeaturedCars');
+      if (container && window.CarService) {
+        const featuredCars = window.CarService.getFeaturedCars().slice(0, 6);
+        container.innerHTML = featuredCars.map(car => window.CarService.createCarCardHTML(car)).join('');
+      }
+    });
+  </script>
+</body>
+</html>

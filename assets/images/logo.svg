@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 60" width="280" height="60">
+  <defs>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F3E7C4"/>
+      <stop offset="50%" stop-color="#D4AF37"/>
+      <stop offset="100%" stop-color="#AA820A"/>
+    </linearGradient>
+    <linearGradient id="shieldGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1E222D"/>
+      <stop offset="100%" stop-color="#0E1015"/>
+    </linearGradient>
+  </defs>
+  <!-- Shield Icon -->
+  <g transform="translate(10, 6)">
+    <path d="M24,2 L44,9 C44,28 35,42 24,46 C13,42 4,28 4,9 L24,2 Z" fill="url(#shieldGrad)" stroke="url(#goldGrad)" stroke-width="2"/>
+    <!-- Stylized M inside shield -->
+    <path d="M14,34 L14,16 L24,27 L34,16 L34,34 L30,34 L30,22 L24,29 L18,22 L18,34 Z" fill="url(#goldGrad)"/>
+    <circle cx="24" cy="11" r="2" fill="url(#goldGrad)"/>
+  </g>
+  <!-- Typography -->
+  <text x="68" y="29" fill="#FFFFFF" font-family="'Outfit', 'Plus Jakarta Sans', sans-serif" font-weight="800" font-size="22" letter-spacing="3.5">MAMUN</text>
+  <text x="180" y="29" fill="url(#goldGrad)" font-family="'Outfit', 'Plus Jakarta Sans', sans-serif" font-weight="300" font-size="22" letter-spacing="4">AUTOS</text>
+  <text x="69" y="44" fill="#94A3B8" font-family="'Plus Jakarta Sans', sans-serif" font-weight="600" font-size="7.5" letter-spacing="3.2">LUXURY AUTOMOTIVE COLLECTION</text>
+</svg>

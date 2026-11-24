@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vehicle Details | Mamun Autos Luxury Showroom</title>
+  <meta name="description" content="View complete specifications, multi-angle photos, vehicle history, and financing options at Mamun Autos.">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/images/brands/mercedes.svg">
+  
+  <!-- Google Fonts: Outfit & Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Bootstrap 5.3 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- Top Announcement Bar -->
+  <div class="top-bar py-2 d-none d-md-block">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-7">
+          <div class="d-flex align-items-center gap-4">
+            <span><i class="fa-solid fa-location-dot text-gold me-2"></i>Plot 45, Gulshan Avenue, Dhaka, Bangladesh</span>
+            <span><i class="fa-regular fa-clock text-gold me-2"></i>Mon - Sat: 9:00 AM - 9:00 PM</span>
+          </div>
+        </div>
+        <div class="col-md-5 text-end">
+          <div class="d-flex align-items-center justify-content-end gap-3">
+            <a href="tel:+8801711000000"><i class="fa-solid fa-phone text-gold me-1"></i> +880 1711-000000</a>
+            <span class="text-secondary">|</span>
+            <div class="d-inline-flex gap-2">
+              <a href="https://facebook.com" target="_blank" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="https://instagram.com" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+              <a href="https://youtube.com" target="_blank" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Navigation Bar -->
+  <nav class="navbar navbar-expand-lg navbar-custom sticky-top">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="index.html">
+        <img src="assets/images/logo.svg" alt="Mamun Autos Logo" height="42">
+      </a>
+      
+      <button class="navbar-toggler border-0 text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fa-solid fa-bars fs-3 text-gold"></i>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarContent">
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="inventory.html">Inventory</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="brands.html">Brands</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html#categoriesSection">Categories</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+        </ul>
+        
+        <div class="d-flex align-items-center gap-3">
+          <a href="inventory.html" class="btn btn-gold text-dark px-3 py-2 fw-semibold">
+            <i class="fa-solid fa-car me-2"></i> Browse Cars
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Breadcrumb & Top Bar -->
+  <div class="bg-dark py-3 border-bottom border-secondary">
+    <div class="container">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb breadcrumb-custom mb-0">
+          <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+          <li class="breadcrumb-item"><a href="inventory.html">Inventory</a></li>
+          <li class="breadcrumb-item"><span id="breadcrumbBrand" class="text-silver">Brand</span></li>
+          <li class="breadcrumb-item active" id="breadcrumbModel" aria-current="page">Model</li>
+        </ol>
+      </nav>
+    </div>
+  </div>
+
+  <!-- Main Details Content -->
+  <main class="py-5 bg-light">
+    <div class="container">
+      
+      <!-- Vehicle Header Section -->
+      <div class="card p-4 border-0 shadow-sm rounded-4 mb-4 bg-white">
+        <div class="row align-items-center">
+          <div class="col-lg-8 mb-3 mb-lg-0">
+            <div class="d-flex flex-wrap align-items-center gap-2 mb-2">
+              <span id="carBrandBadge" class="badge bg-dark text-gold text-uppercase tracking-wider px-3 py-2">Brand</span>
+              <span id="carConditionBadge" class="badge bg-light text-dark border px-3 py-2">Certified Pre-Owned</span>
+              <span id="carYearBadge" class="badge bg-gold text-dark fw-bold px-3 py-2">2023</span>
+              <span class="text-muted small ms-2"><i class="fa-solid fa-barcode me-1"></i> Stock ID: <span id="carVin">WDD2230671</span></span>
+            </div>
+            <h1 id="carTitle" class="display-6 fw-bold mb-0 text-dark font-heading">Mercedes-Benz S-Class S580 4MATIC</h1>
+          </div>
+
+          <div class="col-lg-4 text-lg-end">
+            <span class="text-muted small text-uppercase d-block">Showroom Price</span>
+            <div id="carPrice" class="display-6 fw-bold text-gold font-heading">$124,000</div>
+            <span class="badge bg-success-subtle text-success border border-success-subtle">
+              <i class="fa-solid fa-check-double me-1"></i> Ready for Immediate Delivery
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Main Layout: Gallery + Specs Sidebar -->
+      <div class="row g-4 mb-5">
+        
+        <!-- Left: Image Gallery & Detailed Overview -->
+        <div class="col-lg-8">
+          
+          <!-- Image Gallery Container -->
+          <div class="card p-3 border-0 shadow-sm rounded-4 bg-white mb-4">
+            <!-- Active Large Image -->
+            <div class="car-gallery-main mb-3 position-relative">
+              <img id="mainGalleryImg" src="assets/images/cars/placeholder-car.svg" alt="Car Photo" class="w-100 h-100 object-fit-cover">
+              
+              <!-- Gallery Navigation Buttons -->
+              <button id="prevGalleryBtn" class="btn btn-dark position-absolute top-50 start-0 translate-middle-y ms-3 rounded-circle" style="width: 44px; height: 44px; opacity: 0.85;" aria-label="Previous image">
+                <i class="fa-solid fa-chevron-left"></i>
+              </button>
+              <button id="nextGalleryBtn" class="btn btn-dark position-absolute top-50 end-0 translate-middle-y me-3 rounded-circle" style="width: 44px; height: 44px; opacity: 0.85;" aria-label="Next image">
+                <i class="fa-solid fa-chevron-right"></i>
+              </button>
+            </div>
+
+            <!-- Thumbnail Selector Strip -->
+            <div class="gallery-thumbs-container" id="galleryThumbs">
+              <!-- Populated dynamically -->
+            </div>
+          </div>
+
+          <!-- Vehicle Description Card -->
+          <div class="card p-4 border-0 shadow-sm rounded-4 bg-white mb-4">
+            <h4 class="fw-bold mb-3 text-dark font-heading">
+              <i class="fa-solid fa-circle-info text-gold me-2"></i> Vehicle Overview
+            </h4>
+            <div class="gold-divider mb-3"></div>
+            <p id="carDescription" class="text-body lead fs-6 mb-4">
+              Detailed description loading...
+            </p>
+
+            <h5 class="fw-bold mb-3 text-dark font-heading">Key Features & Equipment</h5>
+            <div class="row g-4" id="featuresContainer">
+              <!-- Feature columns populated dynamically -->
+            </div>
+          </div>
+
+          <!-- 150-Point Inspection Assurance Box -->
+          <div class="card p-4 border-0 shadow-sm rounded-4 bg-white">
+            <div class="d-flex align-items-center gap-3 mb-3">
+              <div class="p-3 rounded-3 bg-light text-gold border border-gold">
+                <i class="fa-solid fa-certificate fs-2"></i>
+              </div>
+              <div>
+                <h5 class="fw-bold mb-1">Mamun Autos Certified Quality Assurance</h5>
+                <p class="text-muted small mb-0">Every vehicle is rigorously vetted to meet international dealership standards.</p>
+              </div>
+            </div>
+            <div class="row g-3 text-muted small pt-2 border-top">
+              <div class="col-sm-6 col-md-3 d-flex align-items-center gap-2">
+                <i class="fa-solid fa-check text-success"></i> 100% Genuine Mileage
+              </div>
+              <div class="col-sm-6 col-md-3 d-flex align-items-center gap-2">
+                <i class="fa-solid fa-check text-success"></i> Accident-Free Body
+              </div>
+              <div class="col-sm-6 col-md-3 d-flex align-items-center gap-2">
+                <i class="fa-solid fa-check text-success"></i> Clear BRTA Title
+              </div>
+              <div class="col-sm-6 col-md-3 d-flex align-items-center gap-2">
+                <i class="fa-solid fa-check text-success"></i> Diagnostic Scanned
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Specifications & Direct Actions Sidebar -->
+        <div class="col-lg-4">
+          
+          <!-- Key Specifications Table Card -->
+          <div class="card p-4 border-0 shadow-sm rounded-4 bg-white mb-4">
+            <h5 class="fw-bold mb-3 text-dark font-heading">
+              <i class="fa-solid fa-list-check text-gold me-2"></i> Technical Specifications
+            </h5>
+            
+            <div class="spec-table-row">
+              <span class="spec-name"><i class="fa-solid fa-calendar me-2 text-gold"></i> Model Year</span>
+              <span class="spec-val" id="specYear">2023</span>
+            </div>
+            <div class="spec-table-row">
+              <span class="spec-name"><i class="fa-solid fa-gauge me-2 text-gold"></i> Odometer</span>
+              <span class="spec-val" id="specMileage">12,500 km</span>
+            </div>
+            <div class="spec-table-row">
+              <span class="spec-name"><i class="fa-solid fa-gear me-2 text-gold"></i> Transmission</span>
+              <span class="spec-val" id="specTransmission">Automatic</span>
+            </div>
+            <div class="spec-table-row">
+              <span class="spec-name"><i class="fa-solid fa-gas-pump me-2 text-gold"></i> Fuel Type</span>
+              <span class="spec-val" id="specFuel">Mild-Hybrid</span>
+            </div>
+            <div class="spec-table-row">
+              <span class="spec-name"><i class="fa-solid fa-car me-2 text-gold"></i> Body Category</span>
+              <span class="spec-val" id="specCategory">Sedan</span>
+            </div>
+            <div class="spec-table-row">
+              <span class="spec-name"><i class="fa-solid fa-engine me-2 text-gold"></i> Engine</span>
+              <span class="spec-val text-end" id="specEngine">4.0L V8 Biturbo</span>
+            </div>
+            <div class="spec-table-row">
+              <span class="spec-name"><i class="fa-solid fa-bolt me-2 text-gold"></i> Horsepower</span>
+              <span class="spec-val" id="specPower">496 hp</span>
+            </div>
+            <div class="spec-table-row">
+              <span class="spec-name"><i class="fa-solid fa-arrows-split-up-and-left me-2 text-gold"></i> Drivetrain</span>
+              <span class="spec-val" id="specDrivetrain">All-Wheel Drive</span>
+            </div>
+            <div class="spec-table-row">
+              <span class="spec-name"><i class="fa-solid fa-palette me-2 text-gold"></i> Exterior Color</span>
+              <span class="spec-val" id="specExtColor">Obsidian Black</span>
+            </div>
+            <div class="spec-table-row">
+              <span class="spec-name"><i class="fa-solid fa-couch me-2 text-gold"></i> Interior Color</span>
+              <span class="spec-val" id="specIntColor">Sienna Brown</span>
+            </div>
+
+            <!-- Direct Contact CTAs -->
+            <div class="mt-4 d-grid gap-2">
+              <button type="button" class="btn btn-gold py-3 fw-bold" data-bs-toggle="modal" data-bs-target="#testDriveModal">
+                <i class="fa-solid fa-calendar-check me-2"></i> Schedule VIP Test Drive
+              </button>
+              
+              <a id="btnWhatsAppInquiry" href="#" target="_blank" class="btn btn-success py-3 fw-bold text-white d-flex align-items-center justify-content-center">
+                <i class="fa-brands fa-whatsapp me-2 fs-5"></i> WhatsApp Direct Inquiry
+              </a>
+              
+              <button type="button" class="btn btn-outline-dark py-2" data-bs-toggle="modal" data-bs-target="#inquiryModal">
+                <i class="fa-solid fa-envelope me-2"></i> Request Call Back
+              </button>
+            </div>
+          </div>
+
+          <!-- Interactive Loan / EMI Calculator -->
+          <div class="calculator-box shadow-sm mb-4">
+            <h5 class="fw-bold mb-3 text-dark font-heading">
+              <i class="fa-solid fa-calculator text-gold me-2"></i> Auto Loan Calculator
+            </h5>
+            <p class="text-muted small mb-3">Estimate your monthly installment based on current bank auto finance rates.</p>
+
+            <div class="mb-3">
+              <label for="calcPrice" class="form-label small text-muted text-uppercase">Vehicle Price ($)</label>
+              <input type="number" id="calcPrice" class="form-control" value="124000">
+            </div>
+
+            <div class="mb-3">
+              <label for="calcDownPayment" class="form-label small text-muted text-uppercase">Down Payment (20%)</label>
+              <input type="number" id="calcDownPayment" class="form-control" value="24800">
+            </div>
+
+            <div class="row g-2 mb-3">
+              <div class="col-6">
+                <label for="calcInterest" class="form-label small text-muted text-uppercase">Interest Rate (%)</label>
+                <input type="number" id="calcInterest" class="form-control" value="8.5" step="0.1">
+              </div>
+              <div class="col-6">
+                <label for="calcTenure" class="form-label small text-muted text-uppercase">Tenure</label>
+                <select id="calcTenure" class="form-select">
+                  <option value="36">3 Years (36 mo)</option>
+                  <option value="48">4 Years (48 mo)</option>
+                  <option value="60" selected>5 Years (60 mo)</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="calculator-result">
+              <span class="small text-silver text-uppercase d-block mb-1">Estimated Monthly Payment</span>
+              <h3 id="calcMonthlyPayment" class="text-gold font-heading fw-bold mb-0">$2,036 / mo</h3>
+            </div>
+          </div>
+
+          <!-- Advisor Card -->
+          <div class="card p-3 border-0 shadow-sm rounded-4 bg-white text-center">
+            <div class="client-avatar mx-auto mb-2 bg-dark text-gold d-flex align-items-center justify-content-center fw-bold fs-4">
+              MA
+            </div>
+            <h6 class="fw-bold mb-0">Mamun Autos VIP Concierge</h6>
+            <span class="text-muted small d-block mb-3">Senior Automotive Advisor</span>
+            <div class="d-flex justify-content-center gap-2">
+              <a href="tel:+8801711000000" class="btn btn-sm btn-outline-dark">
+                <i class="fa-solid fa-phone me-1"></i> Call Advisor
+              </a>
+              <a href="contact.html" class="btn btn-sm btn-outline-gold">
+                <i class="fa-solid fa-location-dot me-1"></i> Visit Us
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Related Cars Section -->
+      <section class="pt-4 border-top">
+        <div class="d-flex justify-content-between align-items-center mb-4">
+          <div>
+            <span class="text-gold fw-bold text-uppercase tracking-wider small">Explore More Options</span>
+            <h3 class="fw-bold mb-0 text-dark font-heading">Similar Vehicles In Showroom</h3>
+          </div>
+          <a href="inventory.html" class="btn btn-outline-dark fw-semibold">
+            View All <i class="fa-solid fa-arrow-right ms-1"></i>
+          </a>
+        </div>
+
+        <div class="row g-4" id="relatedCarsContainer">
+          <!-- Populated dynamically via script -->
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- Test Drive Modal -->
+  <div class="modal fade" id="testDriveModal" tabindex="-1" aria-labelledby="testDriveModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content border-0 shadow-lg bg-dark text-white rounded-4">
+        <div class="modal-header border-secondary">
+          <h5 class="modal-title font-heading text-white" id="testDriveModalLabel">
+            <i class="fa-solid fa-calendar-check text-gold me-2"></i> Schedule VIP Test Drive
+          </h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body p-4">
+          <p class="text-silver small mb-4">Experience the vehicle on a dedicated test route accompanied by our senior advisor.</p>
+          <form id="testDriveForm" class="needs-validation" novalidate>
+            <div class="mb-3">
+              <label for="tdName" class="form-label text-silver small">Your Full Name *</label>
+              <input type="text" class="form-control bg-secondary-dark border-secondary text-white" id="tdName" required>
+            </div>
+            <div class="row g-3 mb-3">
+              <div class="col-md-6">
+                <label for="tdPhone" class="form-label text-silver small">Phone Number *</label>
+                <input type="tel" class="form-control bg-secondary-dark border-secondary text-white" id="tdPhone" required>
+              </div>
+              <div class="col-md-6">
+                <label for="tdDate" class="form-label text-silver small">Preferred Date *</label>
+                <input type="date" class="form-control bg-secondary-dark border-secondary text-white" id="tdDate" required>
+              </div>
+            </div>
+            <div class="mb-3">
+              <label for="tdTime" class="form-label text-silver small">Preferred Time Slot</label>
+              <select id="tdTime" class="form-select bg-secondary-dark border-secondary text-white">
+                <option value="Morning">Morning (10:00 AM - 1:00 PM)</option>
+                <option value="Afternoon">Afternoon (2:00 PM - 5:00 PM)</option>
+                <option value="Evening">Evening (5:00 PM - 8:00 PM)</option>
+              </select>
+            </div>
+            <button type="submit" class="btn btn-gold w-100 py-3 fw-bold mt-2">
+              Confirm Test Drive Request
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- General Inquiry Modal -->
+  <div class="modal fade" id="inquiryModal" tabindex="-1" aria-labelledby="inquiryModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content border-0 shadow-lg bg-dark text-white rounded-4">
+        <div class="modal-header border-secondary">
+          <h5 class="modal-title font-heading text-white" id="inquiryModalLabel">
+            <i class="fa-solid fa-headset text-gold me-2"></i> Request Vehicle Call Back
+          </h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body p-4">
+          <form id="quickInquiryForm" class="needs-validation" novalidate>
+            <div class="mb-3">
+              <label for="inqName" class="form-label text-silver small">Full Name *</label>
+              <input type="text" class="form-control bg-secondary-dark border-secondary text-white" id="inqName" required>
+            </div>
+            <div class="mb-3">
+              <label for="inqPhone" class="form-label text-silver small">Phone / Mobile *</label>
+              <input type="tel" class="form-control bg-secondary-dark border-secondary text-white" id="inqPhone" required>
+            </div>
+            <div class="mb-3">
+              <label for="inqMessage" class="form-label text-silver small">Inquiry Note</label>
+              <textarea class="form-control bg-secondary-dark border-secondary text-white" id="inqMessage" rows="3" placeholder="Tell us what you'd like to know..."></textarea>
+            </div>
+            <button type="submit" class="btn btn-gold w-100 py-3 fw-bold">
+              Send Request
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer-custom">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-4 col-md-6">
+          <a href="index.html" class="d-inline-block mb-3">
+            <img src="assets/images/logo.svg" alt="Mamun Autos" height="42">
+          </a>
+          <p class="text-silver pe-lg-4">
+            Mamun Autos is Bangladesh’s premier multi-brand luxury automotive dealership, providing discerning drivers with certified vehicles, transparent pricing, and world-class customer service.
+          </p>
+          <div class="social-links-wrap mt-3">
+            <a href="https://facebook.com" target="_blank" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://instagram.com" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://youtube.com" target="_blank" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+            <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://wa.me/8801700000000" target="_blank" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-6 col-6">
+          <h5 class="footer-title">Quick Links</h5>
+          <ul class="footer-links">
+            <li><a href="index.html"><i class="fa-solid fa-chevron-right text-gold me-1 small"></i> Home</a></li>
+            <li><a href="inventory.html"><i class="fa-solid fa-chevron-right text-gold me-1 small"></i> Full Inventory</a></li>
+            <li><a href="brands.html"><i class="fa-solid fa-chevron-right text-gold me-1 small"></i> Car Brands</a></li>
+            <li><a href="about.html"><i class="fa-solid fa-chevron-right text-gold me-1 small"></i> About Our Story</a></li>
+            <li><a href="contact.html"><i class="fa-solid fa-chevron-right text-gold me-1 small"></i> Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-6">
+          <h5 class="footer-title">Popular Marques</h5>
+          <ul class="footer-links">
+            <li><a href="inventory.html?brand=Mercedes-Benz"><i class="fa-solid fa-chevron-right text-gold me-1 small"></i> Mercedes-Benz</a></li>
+            <li><a href="inventory.html?brand=BMW"><i class="fa-solid fa-chevron-right text-gold me-1 small"></i> BMW</a></li>
+            <li><a href="inventory.html?brand=Porsche"><i class="fa-solid fa-chevron-right text-gold me-1 small"></i> Porsche</a></li>
+            <li><a href="inventory.html?brand=Audi"><i class="fa-solid fa-chevron-right text-gold me-1 small"></i> Audi</a></li>
+            <li><a href="inventory.html?brand=Land%20Rover"><i class="fa-solid fa-chevron-right text-gold me-1 small"></i> Land Rover</a></li>
+            <li><a href="inventory.html?brand=Toyota"><i class="fa-solid fa-chevron-right text-gold me-1 small"></i> Toyota</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <h5 class="footer-title">Showroom Concierge</h5>
+          <ul class="footer-links mb-3">
+            <li class="d-flex align-items-start gap-2 mb-2">
+              <i class="fa-solid fa-location-dot text-gold mt-1"></i>
+              <span>Plot 45, Gulshan Avenue, Dhaka, Bangladesh</span>
+            </li>
+            <li class="d-flex align-items-center gap-2 mb-2">
+              <i class="fa-solid fa-phone text-gold"></i>
+              <span>+880 1711-000000</span>
+            </li>
+            <li class="d-flex align-items-center gap-2 mb-2">
+              <i class="fa-solid fa-envelope text-gold"></i>
+              <span>inquiry@mamunautos.com</span>
+            </li>
+          </ul>
+          <div class="p-3 rounded-3 bg-secondary-dark border border-secondary">
+            <span class="text-white small fw-bold d-block mb-1">VIP Viewing Hours</span>
+            <span class="text-silver small">Mon - Sat: 9:00 AM - 9:00 PM</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom d-flex flex-column flex-md-row justify-content-between align-items-center text-silver">
+        <p class="mb-2 mb-md-0">© 2026 Mamun Autos. All Rights Reserved. Excellence in Motion.</p>
+        <p class="mb-0">Designed for Premium Automotive Experience.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp Button -->
+  <a href="https://wa.me/8801700000000?text=Hello%20Mamun%20Autos,%20I%20would%20like%20to%20inquire%20about%20your%20available%20cars" 
+     class="whatsapp-float" 
+     target="_blank" 
+     aria-label="Chat on WhatsApp" 
+     title="Chat with Mamun Autos Concierge">
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
+
+  <!-- Back to Top Button -->
+  <button id="backToTopBtn" class="back-to-top" aria-label="Back to top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <!-- Bootstrap 5.3 Bundle JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  
+  <!-- Car Database & Core Scripts -->
+  <script src="assets/js/cars-data.js"></script>
+  <script src="assets/js/main.js"></script>
+
+  <!-- Dynamic Car Details Page Controller -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      if (!window.CarService) return;
+
+      // Extract car ID from URL query string
+      const urlParams = new URLSearchParams(window.location.search);
+      const carId = urlParams.get('id') || 'car-1';
+      const car = window.CarService.getCarById(carId);
+
+      // Populate Headings & Meta
+      document.title = `${car.brand} ${car.model} (${car.year}) | Mamun Autos`;
+      document.getElementById('breadcrumbBrand').textContent = car.brand;
+      document.getElementById('breadcrumbModel').textContent = car.model;
+      document.getElementById('carTitle').textContent = `${car.brand} ${car.model}`;
+      document.getElementById('carBrandBadge').textContent = car.brand;
+      document.getElementById('carYearBadge').textContent = car.year;
+      document.getElementById('carConditionBadge').textContent = car.condition;
+      document.getElementById('carVin').textContent = car.vin;
+      document.getElementById('carPrice').textContent = car.formattedPrice;
+      document.getElementById('carDescription').textContent = car.description;
+
+      // Populate Specs Table
+      document.getElementById('specYear').textContent = car.year;
+      document.getElementById('specMileage').textContent = car.mileageText;
+      document.getElementById('specTransmission').textContent = car.transmission;
+      document.getElementById('specFuel').textContent = car.fuelType;
+      document.getElementById('specCategory').textContent = car.category;
+      document.getElementById('specEngine').textContent = car.engine;
+      document.getElementById('specPower').textContent = car.horsepower;
+      document.getElementById('specDrivetrain').textContent = car.drivetrain;
+      document.getElementById('specExtColor').textContent = car.exteriorColor;
+      document.getElementById('specIntColor').textContent = car.interiorColor;
+
+      // WhatsApp Button Setup
+      const waBtn = document.getElementById('btnWhatsAppInquiry');
+      if (waBtn) {
+        const msg = encodeURIComponent(`Hello Mamun Autos, I am interested in the ${car.brand} ${car.model} (${car.year}) priced at ${car.formattedPrice}. Stock VIN: ${car.vin}. Please provide more details.`);
+        waBtn.href = `https://wa.me/8801700000000?text=${msg}`;
+      }
+
+      // Populate Gallery Images
+      let currentGalleryIndex = 0;
+      const mainImg = document.getElementById('mainGalleryImg');
+      const thumbsContainer = document.getElementById('galleryThumbs');
+      const fallbackImg = 'assets/images/cars/placeholder-car.svg';
+
+      function updateActiveImage(index) {
+        currentGalleryIndex = index;
+        mainImg.src = car.images[currentGalleryIndex] || fallbackImg;
+        document.querySelectorAll('.gallery-thumb').forEach((thumb, idx) => {
+          if (idx === currentGalleryIndex) {
+            thumb.classList.add('active');
+          } else {
+            thumb.classList.remove('active');
+          }
+        });
+      }
+
+      if (thumbsContainer && car.images && car.images.length > 0) {
+        thumbsContainer.innerHTML = car.images.map((imgUrl, idx) => `
+          <div class="gallery-thumb ${idx === 0 ? 'active' : ''}" data-index="${idx}">
+            <img src="${imgUrl}" alt="${car.model} thumb" loading="lazy" onerror="this.src='${fallbackImg}'">
+          </div>
+        `).join('');
+
+        thumbsContainer.querySelectorAll('.gallery-thumb').forEach(thumb => {
+          thumb.addEventListener('click', () => {
+            const idx = parseInt(thumb.getAttribute('data-index'), 10);
+            updateActiveImage(idx);
+          });
+        });
+
+        // Set initial main image
+        updateActiveImage(0);
+      }
+
+      // Prev / Next Gallery Buttons
+      const prevBtn = document.getElementById('prevGalleryBtn');
+      const nextBtn = document.getElementById('nextGalleryBtn');
+      if (prevBtn) {
+        prevBtn.addEventListener('click', () => {
+          const newIdx = (currentGalleryIndex - 1 + car.images.length) % car.images.length;
+          updateActiveImage(newIdx);
+        });
+      }
+      if (nextBtn) {
+        nextBtn.addEventListener('click', () => {
+          const newIdx = (currentGalleryIndex + 1) % car.images.length;
+          updateActiveImage(newIdx);
+        });
+      }
+
+      // Populate Features Checklist
+      const featContainer = document.getElementById('featuresContainer');
+      if (featContainer && car.features) {
+        const groups = [
+          { title: "Safety & Driver Assistance", items: car.features.safety || [] },
+          { title: "Comfort & Luxury Amenities", items: car.features.comfort || [] },
+          { title: "Technology & Connectivity", items: car.features.technology || [] },
+          { title: "Performance & Dynamics", items: car.features.performance || [] }
+        ];
+
+        featContainer.innerHTML = groups.map(g => `
+          <div class="col-md-6">
+            <div class="p-3 rounded-3 bg-light border border-light h-100">
+              <h6 class="fw-bold mb-3 text-dark">${g.title}</h6>
+              <ul class="list-unstyled mb-0">
+                ${g.items.map(item => `
+                  <li class="feature-check-item">
+                    <i class="fa-solid fa-check"></i>
+                    <span>${item}</span>
+                  </li>
+                `).join('')}
+              </ul>
+            </div>
+          </div>
+        `).join('');
+      }
+
+      // Loan Calculator Logic
+      const calcPrice = document.getElementById('calcPrice');
+      const calcDownPayment = document.getElementById('calcDownPayment');
+      const calcInterest = document.getElementById('calcInterest');
+      const calcTenure = document.getElementById('calcTenure');
+      const calcMonthlyResult = document.getElementById('calcMonthlyPayment');
+
+      if (calcPrice) {
+        calcPrice.value = car.price;
+        calcDownPayment.value = Math.round(car.price * 0.2); // 20% default down payment
+      }
+
+      function computeLoan() {
+        const p = parseFloat(calcPrice.value) || car.price;
+        const d = parseFloat(calcDownPayment.value) || 0;
+        const loanAmount = Math.max(0, p - d);
+        const annualRate = (parseFloat(calcInterest.value) || 8.5) / 100;
+        const monthlyRate = annualRate / 12;
+        const months = parseInt(calcTenure.value, 10) || 60;
+
+        if (monthlyRate === 0) {
+          const monthly = loanAmount / months;
+          calcMonthlyResult.textContent = `$${Math.round(monthly).toLocaleString()} / mo`;
+          return;
+        }
+
+        const monthly = (loanAmount * monthlyRate * Math.pow(1 + monthlyRate, months)) / (Math.pow(1 + monthlyRate, months) - 1);
+        calcMonthlyResult.textContent = `$${Math.round(monthly).toLocaleString()} / mo`;
+      }
+
+      [calcPrice, calcDownPayment, calcInterest, calcTenure].forEach(input => {
+        if (input) input.addEventListener('input', computeLoan);
+      });
+      computeLoan();
+
+      // Related Cars
+      const relatedContainer = document.getElementById('relatedCarsContainer');
+      if (relatedContainer) {
+        const related = window.CarService.getRelatedCars(car.id, 3);
+        relatedContainer.innerHTML = related.map(c => window.CarService.createCarCardHTML(c)).join('');
+      }
+    });
+  </script>
+</body>
+</html>

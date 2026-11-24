@@ -1,0 +1,1149 @@
+/* ==========================================================================
+   Mamun Autos - Luxury Automotive Showroom
+   Master Stylesheet (style.css)
+   Clean, modern, premium automotive design system
+   ========================================================================== */
+
+:root {
+  /* Color Palette */
+  --primary-dark: #0B0D12;
+  --secondary-dark: #131720;
+  --card-dark: #191E2B;
+  --surface-elevated: #22293A;
+  
+  --gold-primary: #D4AF37;
+  --gold-hover: #E6C252;
+  --gold-dark: #9E7D1A;
+  --gold-light: #FDF8EC;
+  --gold-glow: rgba(212, 175, 55, 0.25);
+  
+  --text-dark: #0F172A;
+  --text-body: #334155;
+  --text-muted: #64748B;
+  --text-light: #F8FAFC;
+  --text-silver: #94A3B8;
+  
+  --bg-light: #F8F9FC;
+  --bg-white: #FFFFFF;
+  --border-light: #E2E8F0;
+  --border-dark: #262E40;
+
+  /* Fonts */
+  --font-heading: 'Outfit', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-body: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+
+  /* Transitions & Shadows */
+  --transition-fast: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-smooth: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+  --shadow-subtle: 0 4px 20px rgba(0, 0, 0, 0.05);
+  --shadow-card: 0 10px 30px rgba(15, 23, 42, 0.08);
+  --shadow-hover: 0 20px 40px rgba(15, 23, 42, 0.15);
+  --shadow-gold: 0 10px 25px rgba(212, 175, 55, 0.28);
+}
+
+/* ==========================================================================
+   Global Base & Typography
+   ========================================================================== */
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-body);
+  color: var(--text-body);
+  background-color: var(--bg-light);
+  line-height: 1.65;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5, h6,
+.font-heading {
+  font-family: var(--font-heading);
+  color: var(--text-dark);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.text-gold {
+  color: var(--gold-primary) !important;
+}
+
+.bg-gold {
+  background-color: var(--gold-primary) !important;
+  color: #000 !important;
+}
+
+.bg-dark-custom {
+  background-color: var(--primary-dark) !important;
+}
+
+.bg-secondary-dark {
+  background-color: var(--secondary-dark) !important;
+}
+
+.tracking-wider {
+  letter-spacing: 0.08em;
+}
+
+.tracking-widest {
+  letter-spacing: 0.15em;
+}
+
+/* Luxury Divider */
+.gold-divider {
+  width: 60px;
+  height: 3px;
+  background: linear-gradient(90deg, var(--gold-primary), transparent);
+  border-radius: 2px;
+  margin: 1rem 0;
+}
+
+.gold-divider.center {
+  margin-left: auto;
+  margin-right: auto;
+  background: linear-gradient(90deg, transparent, var(--gold-primary), transparent);
+}
+
+/* ==========================================================================
+   Top Announcement Bar & Header
+   ========================================================================== */
+
+.top-bar {
+  background-color: #080A0E;
+  color: var(--text-silver);
+  font-size: 0.825rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+}
+
+.top-bar a {
+  color: var(--text-silver);
+  text-decoration: none;
+  transition: var(--transition-fast);
+}
+
+.top-bar a:hover {
+  color: var(--gold-primary);
+}
+
+/* Main Navbar */
+.navbar-custom {
+  background-color: rgba(11, 13, 18, 0.94);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 0.85rem 0;
+  transition: var(--transition-smooth);
+  z-index: 1030;
+}
+
+.navbar-custom.scrolled {
+  padding: 0.55rem 0;
+  background-color: rgba(8, 10, 14, 0.98);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+  border-bottom-color: rgba(212, 175, 55, 0.2);
+}
+
+.navbar-brand img {
+  height: 44px;
+  width: auto;
+  transition: var(--transition-fast);
+}
+
+.navbar-custom .nav-link {
+  color: #E2E8F0;
+  font-family: var(--font-heading);
+  font-weight: 500;
+  font-size: 0.95rem;
+  padding: 0.5rem 1rem !important;
+  position: relative;
+  transition: var(--transition-fast);
+}
+
+.navbar-custom .nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 1rem;
+  right: 1rem;
+  height: 2px;
+  background-color: var(--gold-primary);
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 0.25s ease;
+}
+
+.navbar-custom .nav-link:hover,
+.navbar-custom .nav-link.active {
+  color: var(--gold-primary);
+}
+
+.navbar-custom .nav-link:hover::after,
+.navbar-custom .nav-link.active::after {
+  transform: scaleX(1);
+}
+
+/* ==========================================================================
+   Buttons & Interactive Elements
+   ========================================================================== */
+
+.btn {
+  font-family: var(--font-heading);
+  font-weight: 600;
+  border-radius: 6px;
+  padding: 0.65rem 1.4rem;
+  transition: var(--transition-smooth);
+}
+
+.btn-gold {
+  background: linear-gradient(135deg, var(--gold-primary), #B89224);
+  color: #000000;
+  border: 1px solid var(--gold-primary);
+  box-shadow: 0 4px 15px rgba(212, 175, 55, 0.25);
+}
+
+.btn-gold:hover, .btn-gold:focus {
+  background: linear-gradient(135deg, var(--gold-hover), var(--gold-primary));
+  color: #000000;
+  box-shadow: var(--shadow-gold);
+  transform: translateY(-2px);
+}
+
+.btn-outline-gold {
+  color: var(--gold-primary);
+  border: 1px solid var(--gold-primary);
+  background: transparent;
+}
+
+.btn-outline-gold:hover, .btn-outline-gold:focus {
+  background-color: var(--gold-primary);
+  color: #000000;
+  border-color: var(--gold-primary);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(212, 175, 55, 0.25);
+}
+
+.btn-whatsapp-icon {
+  background-color: #25D366;
+  color: #FFFFFF;
+  border-radius: 6px;
+  padding: 0.65rem 0.9rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: var(--transition-fast);
+}
+
+.btn-whatsapp-icon:hover {
+  background-color: #1EBE5B;
+  color: #FFFFFF;
+  transform: scale(1.05);
+}
+
+.btn-favorite {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: rgba(15, 23, 42, 0.7);
+  backdrop-filter: blur(6px);
+  border: none;
+  color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  transition: var(--transition-fast);
+}
+
+.btn-favorite:hover {
+  background: var(--gold-primary);
+  color: #000000;
+}
+
+.btn-favorite.active {
+  background: #EF4444;
+  color: #FFFFFF;
+}
+
+/* ==========================================================================
+   Hero Section
+   ========================================================================== */
+
+.hero-section {
+  position: relative;
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  background: linear-gradient(180deg, rgba(11, 13, 18, 0.82) 0%, rgba(11, 13, 18, 0.94) 100%),
+              url('https://images.unsplash.com/photo-1617814076367-b759c7d7e738?auto=format&fit=crop&w=1920&q=80') center/cover no-repeat;
+  color: #FFFFFF;
+  padding: 8rem 0 5rem;
+}
+
+.hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.4rem 1rem;
+  background: rgba(212, 175, 55, 0.12);
+  border: 1px solid rgba(212, 175, 55, 0.35);
+  border-radius: 50px;
+  color: var(--gold-primary);
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.hero-title {
+  font-size: clamp(2.5rem, 5vw, 4.2rem);
+  font-weight: 800;
+  line-height: 1.1;
+  color: #FFFFFF;
+  margin-bottom: 1.25rem;
+}
+
+.hero-lead {
+  font-size: clamp(1.05rem, 2vw, 1.25rem);
+  color: #CBD5E1;
+  max-width: 620px;
+  margin-bottom: 2rem;
+}
+
+/* Quick Search Box in Hero */
+.hero-search-box {
+  background: rgba(25, 30, 43, 0.85);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.45);
+}
+
+.hero-search-box .form-label {
+  color: var(--text-silver);
+  font-size: 0.775rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 0.4rem;
+}
+
+.hero-search-box .form-select,
+.hero-search-box .form-control {
+  background-color: rgba(11, 13, 18, 0.8);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  color: #FFFFFF;
+  font-size: 0.925rem;
+  padding: 0.65rem 0.9rem;
+}
+
+.hero-search-box .form-select:focus,
+.hero-search-box .form-control:focus {
+  border-color: var(--gold-primary);
+  box-shadow: 0 0 0 0.25rem rgba(212, 175, 55, 0.2);
+  color: #FFFFFF;
+}
+
+.hero-search-box .form-select option {
+  background-color: var(--secondary-dark);
+  color: #FFFFFF;
+}
+
+/* Stats Ribbon */
+.stats-ribbon {
+  background: #0E1118;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  padding: 2.2rem 0;
+}
+
+.stat-item h3 {
+  color: var(--gold-primary);
+  font-size: 2.25rem;
+  font-weight: 800;
+  margin-bottom: 0.2rem;
+}
+
+.stat-item p {
+  color: var(--text-silver);
+  font-size: 0.875rem;
+  font-weight: 500;
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+/* ==========================================================================
+   Car Cards Component (Shared across Index & Inventory)
+   ========================================================================== */
+
+.car-card {
+  background: var(--bg-white);
+  border-radius: 12px;
+  overflow: hidden;
+  transition: var(--transition-smooth);
+  border: 1px solid var(--border-light) !important;
+}
+
+.car-card:hover {
+  transform: translateY(-7px);
+  box-shadow: var(--shadow-hover);
+  border-color: rgba(212, 175, 55, 0.4) !important;
+}
+
+.car-image-container {
+  position: relative;
+  overflow: hidden;
+  background-color: #0E1118;
+  height: 230px;
+}
+
+.car-img-top {
+  width: 100%;
+  height: 230px;
+  object-fit: cover;
+  transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.car-card:hover .car-img-top {
+  transform: scale(1.07);
+}
+
+.car-price-tag {
+  position: absolute;
+  bottom: 0.85rem;
+  right: 0.85rem;
+  background: rgba(11, 13, 18, 0.85);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(212, 175, 55, 0.4);
+  padding: 0.3rem 0.8rem;
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.price-label {
+  font-size: 0.65rem;
+  color: var(--text-silver);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  line-height: 1;
+}
+
+.price-value {
+  color: var(--gold-primary);
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 1.15rem;
+  line-height: 1.2;
+}
+
+/* Badges */
+.badge-featured {
+  background: linear-gradient(135deg, var(--gold-primary), #9E7D1A);
+  color: #000000;
+  font-weight: 700;
+  font-size: 0.725rem;
+  padding: 0.4rem 0.75rem;
+  border-radius: 4px;
+}
+
+.badge-new {
+  background: linear-gradient(135deg, #10B981, #059669);
+  color: #FFFFFF;
+  font-weight: 700;
+  font-size: 0.725rem;
+  padding: 0.4rem 0.75rem;
+  border-radius: 4px;
+}
+
+.badge-popular {
+  background: linear-gradient(135deg, #F59E0B, #D97706);
+  color: #000000;
+  font-weight: 700;
+  font-size: 0.725rem;
+  padding: 0.4rem 0.75rem;
+  border-radius: 4px;
+}
+
+.car-brand-name {
+  font-size: 0.775rem;
+  color: var(--gold-primary);
+  letter-spacing: 0.1em;
+}
+
+.car-year-badge {
+  background-color: var(--bg-light);
+  color: var(--text-dark);
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 0.15rem 0.5rem;
+  border-radius: 4px;
+  border: 1px solid var(--border-light);
+}
+
+.car-model-title {
+  font-size: 1.15rem;
+  font-weight: 700;
+  line-height: 1.35;
+}
+
+.car-model-title a {
+  color: var(--text-dark);
+  transition: var(--transition-fast);
+}
+
+.car-model-title a:hover {
+  color: var(--gold-primary);
+}
+
+.car-specs-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.5rem;
+  background-color: #F8FAFC;
+  padding: 0.75rem;
+  border-radius: 8px;
+  border: 1px solid var(--border-light);
+}
+
+.spec-item {
+  font-size: 0.8rem;
+  color: var(--text-body);
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Category Filter Tabs (Homepage) */
+.filter-tabs .nav-link {
+  color: var(--text-muted);
+  font-family: var(--font-heading);
+  font-weight: 600;
+  font-size: 0.95rem;
+  padding: 0.5rem 1.25rem;
+  border-radius: 50px;
+  border: 1px solid transparent;
+  transition: var(--transition-fast);
+}
+
+.filter-tabs .nav-link:hover {
+  color: var(--text-dark);
+  background-color: rgba(212, 175, 55, 0.1);
+}
+
+.filter-tabs .nav-link.active {
+  color: #000000;
+  background: var(--gold-primary);
+  border-color: var(--gold-primary);
+  box-shadow: 0 4px 12px rgba(212, 175, 55, 0.3);
+}
+
+/* ==========================================================================
+   Brand Cards Component
+   ========================================================================== */
+
+.brand-card {
+  background: var(--bg-white);
+  border: 1px solid var(--border-light);
+  border-radius: 12px;
+  padding: 1.75rem 1rem;
+  text-align: center;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: var(--transition-smooth);
+  height: 100%;
+}
+
+.brand-card:hover {
+  transform: translateY(-6px);
+  border-color: var(--gold-primary);
+  box-shadow: var(--shadow-card);
+}
+
+.brand-logo-wrap {
+  width: 70px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+  transition: transform 0.3s ease;
+}
+
+.brand-logo-wrap img,
+.brand-logo-wrap svg {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.brand-card:hover .brand-logo-wrap {
+  transform: scale(1.1);
+}
+
+.brand-name {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 1rem;
+  color: var(--text-dark);
+  margin-bottom: 0.2rem;
+}
+
+.brand-count {
+  font-size: 0.775rem;
+  color: var(--text-muted);
+}
+
+/* ==========================================================================
+   Category Cards Component
+   ========================================================================== */
+
+.category-card {
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+  height: 240px;
+  display: block;
+  text-decoration: none;
+  box-shadow: var(--shadow-subtle);
+}
+
+.category-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.category-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(11, 13, 18, 0.2) 0%, rgba(11, 13, 18, 0.88) 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 1.5rem;
+  transition: var(--transition-fast);
+}
+
+.category-card:hover img {
+  transform: scale(1.08);
+}
+
+.category-card:hover .category-overlay {
+  background: linear-gradient(180deg, rgba(11, 13, 18, 0.3) 0%, rgba(11, 13, 18, 0.94) 100%);
+}
+
+.category-card:hover .category-title {
+  color: var(--gold-primary);
+}
+
+.category-title {
+  color: #FFFFFF;
+  font-family: var(--font-heading);
+  font-size: 1.35rem;
+  font-weight: 700;
+  margin-bottom: 0.2rem;
+  transition: var(--transition-fast);
+}
+
+.category-count {
+  color: var(--text-silver);
+  font-size: 0.85rem;
+}
+
+/* ==========================================================================
+   Why Choose Us & Feature Box
+   ========================================================================== */
+
+.feature-box {
+  background: var(--bg-white);
+  border: 1px solid var(--border-light);
+  border-radius: 12px;
+  padding: 2.25rem 1.75rem;
+  transition: var(--transition-smooth);
+  height: 100%;
+}
+
+.feature-box:hover {
+  transform: translateY(-6px);
+  border-color: var(--gold-primary);
+  box-shadow: var(--shadow-hover);
+}
+
+.feature-icon-wrap {
+  width: 64px;
+  height: 64px;
+  border-radius: 12px;
+  background: rgba(212, 175, 55, 0.12);
+  color: var(--gold-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.65rem;
+  margin-bottom: 1.25rem;
+  border: 1px solid rgba(212, 175, 55, 0.25);
+  transition: var(--transition-fast);
+}
+
+.feature-box:hover .feature-icon-wrap {
+  background: var(--gold-primary);
+  color: #000000;
+  transform: scale(1.08);
+}
+
+/* ==========================================================================
+   Promotional Banner
+   ========================================================================== */
+
+.promo-banner {
+  background: linear-gradient(90deg, rgba(11, 13, 18, 0.96) 0%, rgba(19, 23, 32, 0.88) 100%),
+              url('https://images.unsplash.com/photo-1614162692292-7ac56d7f7f1e?auto=format&fit=crop&w=1920&q=80') center/cover no-repeat;
+  border-radius: 16px;
+  padding: 4.5rem 3rem;
+  border: 1px solid rgba(212, 175, 55, 0.3);
+  position: relative;
+  overflow: hidden;
+}
+
+.promo-banner::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  right: -20%;
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, rgba(212, 175, 55, 0.15) 0%, transparent 70%);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+/* ==========================================================================
+   Testimonial Cards
+   ========================================================================== */
+
+.testimonial-card {
+  background: var(--bg-white);
+  border: 1px solid var(--border-light);
+  border-radius: 12px;
+  padding: 2rem;
+  transition: var(--transition-smooth);
+  height: 100%;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-card);
+  border-color: rgba(212, 175, 55, 0.4);
+}
+
+.client-rating {
+  color: #F59E0B;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+.client-avatar {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid var(--gold-primary);
+}
+
+/* ==========================================================================
+   Inventory Page & Filters
+   ========================================================================== */
+
+.filter-sidebar {
+  background: var(--bg-white);
+  border: 1px solid var(--border-light);
+  border-radius: 12px;
+  padding: 1.5rem;
+}
+
+.filter-group {
+  margin-bottom: 1.5rem;
+  padding-bottom: 1.25rem;
+  border-bottom: 1px solid var(--border-light);
+}
+
+.filter-group:last-child {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+.filter-title {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--text-dark);
+  margin-bottom: 0.85rem;
+}
+
+.form-check-input:checked {
+  background-color: var(--gold-primary);
+  border-color: var(--gold-primary);
+}
+
+.form-check-input:focus {
+  box-shadow: 0 0 0 0.25rem rgba(212, 175, 55, 0.25);
+  border-color: var(--gold-primary);
+}
+
+.price-range-slider {
+  accent-color: var(--gold-primary);
+}
+
+.active-filter-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  background-color: rgba(212, 175, 55, 0.15);
+  color: #785A00;
+  border: 1px solid rgba(212, 175, 55, 0.35);
+  font-size: 0.8rem;
+  padding: 0.2rem 0.65rem;
+  border-radius: 50px;
+}
+
+.active-filter-pill .btn-close-pill {
+  background: none;
+  border: none;
+  padding: 0;
+  color: inherit;
+  font-size: 0.75rem;
+  cursor: pointer;
+}
+
+/* ==========================================================================
+   Car Details Page
+   ========================================================================== */
+
+.car-gallery-main {
+  height: 480px;
+  border-radius: 12px;
+  overflow: hidden;
+  background-color: #0E1118;
+  position: relative;
+  border: 1px solid var(--border-light);
+}
+
+.car-gallery-main img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.gallery-thumbs-container {
+  display: flex;
+  gap: 0.75rem;
+  overflow-x: auto;
+  padding: 0.5rem 0;
+}
+
+.gallery-thumb {
+  width: 95px;
+  height: 65px;
+  border-radius: 8px;
+  overflow: hidden;
+  cursor: pointer;
+  border: 2px solid transparent;
+  flex-shrink: 0;
+  opacity: 0.7;
+  transition: var(--transition-fast);
+}
+
+.gallery-thumb.active,
+.gallery-thumb:hover {
+  opacity: 1;
+  border-color: var(--gold-primary);
+}
+
+.gallery-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.spec-table-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.75rem 0;
+  border-bottom: 1px solid var(--border-light);
+  font-size: 0.9rem;
+}
+
+.spec-table-row .spec-name {
+  color: var(--text-muted);
+}
+
+.spec-table-row .spec-val {
+  font-weight: 600;
+  color: var(--text-dark);
+}
+
+.feature-check-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.6rem;
+  font-size: 0.9rem;
+  margin-bottom: 0.65rem;
+}
+
+.feature-check-item i {
+  color: var(--gold-primary);
+  margin-top: 0.2rem;
+}
+
+/* Loan Calculator Box */
+.calculator-box {
+  background: var(--bg-white);
+  border: 1px solid var(--border-light);
+  border-radius: 12px;
+  padding: 1.75rem;
+}
+
+.calculator-result {
+  background: #0E1118;
+  color: #FFFFFF;
+  border-radius: 8px;
+  padding: 1.25rem;
+  text-align: center;
+  border: 1px solid rgba(212, 175, 55, 0.3);
+}
+
+/* ==========================================================================
+   Page Headers & Breadcrumbs
+   ========================================================================== */
+
+.page-header {
+  background: linear-gradient(180deg, rgba(11, 13, 18, 0.94) 0%, rgba(19, 23, 32, 0.98) 100%),
+              url('https://images.unsplash.com/photo-1617814076367-b759c7d7e738?auto=format&fit=crop&w=1920&q=80') center/cover no-repeat;
+  color: #FFFFFF;
+  padding: 6.5rem 0 3.5rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.breadcrumb-custom .breadcrumb-item a {
+  color: var(--text-silver);
+  text-decoration: none;
+  transition: var(--transition-fast);
+}
+
+.breadcrumb-custom .breadcrumb-item a:hover {
+  color: var(--gold-primary);
+}
+
+.breadcrumb-custom .breadcrumb-item.active {
+  color: var(--gold-primary);
+}
+
+.breadcrumb-custom .breadcrumb-item + .breadcrumb-item::before {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+/* ==========================================================================
+   Footer
+   ========================================================================== */
+
+.footer-custom {
+  background-color: #07090D;
+  color: var(--text-silver);
+  padding: 5rem 0 2rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.footer-title {
+  color: #FFFFFF;
+  font-family: var(--font-heading);
+  font-size: 1.15rem;
+  font-weight: 700;
+  margin-bottom: 1.25rem;
+  position: relative;
+  padding-bottom: 0.6rem;
+}
+
+.footer-title::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 32px;
+  height: 2px;
+  background-color: var(--gold-primary);
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links li {
+  margin-bottom: 0.65rem;
+}
+
+.footer-links a {
+  color: var(--text-silver);
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: var(--transition-fast);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.footer-links a:hover {
+  color: var(--gold-primary);
+  transform: translateX(4px);
+}
+
+.social-links-wrap a {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.06);
+  color: #FFFFFF;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  margin-right: 0.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: var(--transition-fast);
+}
+
+.social-links-wrap a:hover {
+  background: var(--gold-primary);
+  color: #000000;
+  border-color: var(--gold-primary);
+  transform: translateY(-3px);
+}
+
+.footer-bottom {
+  margin-top: 3.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+  font-size: 0.85rem;
+}
+
+/* ==========================================================================
+   Back to Top & Utility
+   ========================================================================== */
+
+.back-to-top {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  width: 44px;
+  height: 44px;
+  background: var(--gold-primary);
+  color: #000000;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  visibility: hidden;
+  transition: var(--transition-smooth);
+  z-index: 999;
+}
+
+.back-to-top.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+.back-to-top:hover {
+  background: var(--gold-hover);
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-gold);
+}
+
+/* Floating WhatsApp Button */
+.whatsapp-float {
+  position: fixed;
+  bottom: 80px;
+  right: 25px;
+  width: 48px;
+  height: 48px;
+  background-color: #25D366;
+  color: #FFFFFF;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.45rem;
+  box-shadow: 0 6px 20px rgba(37, 211, 102, 0.35);
+  text-decoration: none;
+  z-index: 998;
+  transition: var(--transition-fast);
+}
+
+.whatsapp-float:hover {
+  color: #FFFFFF;
+  transform: scale(1.1);
+  box-shadow: 0 8px 25px rgba(37, 211, 102, 0.5);
+}
+
+/* Form Styles & Feedback */
+.form-control:focus,
+.form-select:focus {
+  border-color: var(--gold-primary);
+  box-shadow: 0 0 0 0.25rem rgba(212, 175, 55, 0.2);
+}
+
+/* ==========================================================================
+   Responsive Breakpoints
+   ========================================================================== */
+
+@media (max-width: 991.98px) {
+  .hero-section {
+    padding: 7rem 0 4rem;
+    min-height: auto;
+  }
+  
+  .car-gallery-main {
+    height: 360px;
+  }
+
+  .navbar-custom .navbar-collapse {
+    background-color: #0C0E14;
+    border-radius: 8px;
+    padding: 1rem;
+    margin-top: 0.75rem;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+}
+
+@media (max-width: 767.98px) {
+  .hero-title {
+    font-size: 2.2rem;
+  }
+
+  .car-gallery-main {
+    height: 280px;
+  }
+
+  .promo-banner {
+    padding: 2.5rem 1.5rem;
+  }
+}

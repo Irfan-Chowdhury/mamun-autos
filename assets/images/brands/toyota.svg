@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 90" width="120" height="90">
+  <!-- Outer Oval -->
+  <ellipse cx="60" cy="45" rx="55" ry="38" fill="none" stroke="#D4AF37" stroke-width="6"/>
+  <!-- Top inner vertical Oval -->
+  <ellipse cx="60" cy="45" rx="20" ry="34" fill="none" stroke="#D4AF37" stroke-width="5"/>
+  <!-- Top inner horizontal Oval -->
+  <ellipse cx="60" cy="30" rx="35" ry="16" fill="none" stroke="#D4AF37" stroke-width="5"/>
+</svg>

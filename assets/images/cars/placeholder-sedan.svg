@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <defs>
+    <linearGradient id="bgS" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#141720"/>
+      <stop offset="100%" stop-color="#0A0B0E"/>
+    </linearGradient>
+    <linearGradient id="goldS" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#AA820A"/>
+      <stop offset="50%" stop-color="#D4AF37"/>
+      <stop offset="100%" stop-color="#F3E7C4"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#bgS)"/>
+  <ellipse cx="400" cy="405" rx="330" ry="25" fill="#000" opacity="0.8"/>
+  <!-- Sedan Silhouette -->
+  <path d="M220,290 C250,230 320,200 450,200 C530,200 580,230 630,280 Z" fill="#1C212E" stroke="#374151" stroke-width="2"/>
+  <path d="M260,285 C280,235 340,210 440,210 C510,210 550,230 595,280 Z" fill="#2A3244" opacity="0.85"/>
+  <line x1="430" y1="210" x2="430" y2="285" stroke="#111" stroke-width="3"/>
+  <!-- Sedan Body -->
+  <path d="M110,340 C120,310 160,300 230,290 C300,285 360,280 480,280 C570,280 640,285 680,310 C715,325 725,350 705,370 C685,380 650,380 620,380 C600,345 550,345 530,380 L280,380 C260,345 210,345 190,380 C140,380 120,375 110,360 Z" fill="#181D28" stroke="#4B5563" stroke-width="2"/>
+  <path d="M130,330 C240,310 480,300 690,325" fill="none" stroke="url(#goldS)" stroke-width="2.5"/>
+  <circle cx="235" cy="380" r="44" fill="#111" stroke="#4B5563" stroke-width="4"/>
+  <circle cx="235" cy="380" r="30" fill="#1A1F2B" stroke="url(#goldS)" stroke-width="2"/>
+  <circle cx="575" cy="380" r="44" fill="#111" stroke="#4B5563" stroke-width="4"/>
+  <circle cx="575" cy="380" r="30" fill="#1A1F2B" stroke="url(#goldS)" stroke-width="2"/>
+  <text x="400" y="460" fill="#64748B" font-family="'Plus Jakarta Sans', sans-serif" font-weight="700" font-size="13" letter-spacing="4" text-anchor="middle">EXECUTIVE LUXURY SEDAN</text>
+</svg>

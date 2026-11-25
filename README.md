@@ -38,9 +38,9 @@ This project delivers a complete frontend experience with interactive client-sid
 ### A. Homepage (`index.html`)
 1. **Top Announcement Bar**: Working hours, showroom address, direct hotline, and social links.
 2. **Sticky Navigation Bar**: Smooth background blur on scroll, active page indicator, mobile hamburger menu, and "Browse Cars" button.
-3. **Hero Section**: Headline *"Find Your Perfect Drive."*, supporting luxury statement, explore inventory CTAs, and an interactive **Find In Showroom** quick search widget (Brand, Category, Budget).
+3. **Hero Section**: Headline *"Find Your Perfect Drive."*, animated moving car background media (video + animated vector motion layer), supporting luxury statement, explore inventory CTAs, and an interactive **Find In Showroom** quick search widget (Brand, Category, Budget).
 4. **Key Statistics Ribbon**: 500+ luxury cars delivered, 15+ global brands, 150-point inspection, 99% satisfaction.
-5. **Featured Showroom Vehicles**: 6 hand-picked flagship cars with badges (*"Featured"*, *"New Arrival"*, *"Popular"*), specs pills (mileage, transmission, fuel, body type), price tags, and quick WhatsApp inquiry triggers.
+5. **Featured Showroom Vehicles**: 6 hand-picked flagship cars with badges (*"Featured"*, *"New Arrival"*, *"Popular"*), specs pills (mileage, transmission, fuel, body type), price tags, and clean full-width "View Details" buttons.
 6. **Browse by Brand**: 10 international automotive brand cards featuring custom retina vector SVGs and car counts.
 7. **Browse by Body Type**: 8 visual category cards (Sedan, SUV, Sports Car, Luxury Car, Electric Vehicle, Coupe, Hatchback, All Collections).
 8. **Why Choose Us**: 6 core advantages with golden badges and icons.

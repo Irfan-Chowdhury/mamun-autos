@@ -10,7 +10,33 @@ document.addEventListener('DOMContentLoaded', () => {
   initContactForms();
   initHeroSearch();
   initSmoothScroll();
+  initHeroVideo();
 });
+
+/**
+ * Hero Background Video Autoplay Safety
+ */
+function initHeroVideo() {
+  const video = document.querySelector('.hero-bg-video');
+  const carImg = document.querySelector('.hero-car-motion-img');
+  if (video) {
+    video.muted = true;
+    const playPromise = video.play();
+    if (playPromise !== undefined) {
+      playPromise.then(() => {
+        video.style.opacity = '0.85';
+      }).catch(() => {
+        // Autoplay prevented or offline; reveal the moving car photo layer
+        video.style.display = 'none';
+        if (carImg) carImg.style.opacity = '1';
+      });
+    }
+    video.addEventListener('error', () => {
+      video.style.display = 'none';
+      if (carImg) carImg.style.opacity = '1';
+    });
+  }
+}
 
 /**
  * Sticky Navbar on scroll

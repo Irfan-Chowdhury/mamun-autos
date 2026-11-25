@@ -33,7 +33,7 @@ const CARS_DATABASE = [
     featured: true,
     description: "The pinnacle of executive luxury. This 2023 Mercedes-Benz S580 4MATIC features flagship Burmester 3D Surround Sound, executive rear seating package with massage, rear-axle steering, OLED central display, and active multicontour front seats. Impeccably maintained with full service history at authorized dealership.",
     images: [
-      "https://images.unsplash.com/photo-1617814076367-b759c7d7e738?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?auto=format&fit=crop&w=1200&q=80",
       "https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?auto=format&fit=crop&w=1200&q=80",
       "https://images.unsplash.com/photo-1563720223185-11003d516935?auto=format&fit=crop&w=1200&q=80",
       "https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1200&q=80"
@@ -115,7 +115,7 @@ const CARS_DATABASE = [
     images: [
       "https://images.unsplash.com/photo-1614162692292-7ac56d7f7f1e?auto=format&fit=crop&w=1200&q=80",
       "https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1200&q=80",
-      "https://images.unsplash.com/photo-1617814076367-b759c7d7e738?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?auto=format&fit=crop&w=1200&q=80",
       "https://images.unsplash.com/photo-1580273916550-e323be2ae537?auto=format&fit=crop&w=1200&q=80"
     ],
     features: {
@@ -154,7 +154,7 @@ const CARS_DATABASE = [
     description: "Unrivaled peerless refinement and all-terrain majesty. This Autobiography edition comes equipped with Executive Class rear seats, Meridian Signature Sound with active road noise cancellation, digital LED headlights with predictive beam, and all-wheel steering.",
     images: [
       "https://images.unsplash.com/photo-1563720223185-11003d516935?auto=format&fit=crop&w=1200&q=80",
-      "https://images.unsplash.com/photo-1617814076367-b759c7d7e738?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?auto=format&fit=crop&w=1200&q=80",
       "https://images.unsplash.com/photo-1555215695-3004980ad54e?auto=format&fit=crop&w=1200&q=80",
       "https://images.unsplash.com/photo-1502877338535-766e1452684a?auto=format&fit=crop&w=1200&q=80"
     ],
@@ -634,7 +634,7 @@ const CARS_DATABASE = [
     description: "Baby S-Class elegance and state-of-the-art tech. Features AMG Line sports styling, 11.9-inch portrait touchscreen, 64-color ambient lighting, Burmester 3D audio, and sport suspension with direct-steer system.",
     images: [
       "https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?auto=format&fit=crop&w=1200&q=80",
-      "https://images.unsplash.com/photo-1617814076367-b759c7d7e738?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?auto=format&fit=crop&w=1200&q=80",
       "https://images.unsplash.com/photo-1563720223185-11003d516935?auto=format&fit=crop&w=1200&q=80",
       "https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1200&q=80"
     ],
@@ -674,7 +674,7 @@ const CARS_DATABASE = [
     description: "The definitive icon of all-terrain luxury and motorsport swagger. Handcrafted 4.0L Biturbo V8 with dual side-exit exhaust pipes, AMG Ride Control sport suspension, Burmester surround sound, and exclusive designo leather interior.",
     images: [
       "https://images.unsplash.com/photo-1520031441872-265e4ff70366?auto=format&fit=crop&w=1200&q=80",
-      "https://images.unsplash.com/photo-1617814076367-b759c7d7e738?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?auto=format&fit=crop&w=1200&q=80",
       "https://images.unsplash.com/photo-1563720223185-11003d516935?auto=format&fit=crop&w=1200&q=80",
       "https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1200&q=80"
     ],
@@ -713,7 +713,7 @@ const CARS_DATABASE = [
     featured: true,
     description: "Sculpted electric grand tourer with low drag coefficient, 800-volt high-speed charging architecture (5% to 80% in 22 mins), panoramic fixed glass roof, Audi laser headlights, and Bang & Olufsen 3D sound.",
     images: [
-      "https://images.unsplash.com/photo-1617814076367-b759c7d7e738?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?auto=format&fit=crop&w=1200&q=80",
       "https://images.unsplash.com/photo-1580273916550-e323be2ae537?auto=format&fit=crop&w=1200&q=80",
       "https://images.unsplash.com/photo-1603584173870-7f23fdae1b7a?auto=format&fit=crop&w=1200&q=80",
       "https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1200&q=80"
@@ -821,13 +821,13 @@ const BRANDS_DATABASE = [
 ];
 
 const CATEGORIES_DATABASE = [
-  { name: "Sedan", count: 5, icon: "fa-car-side", image: "https://images.unsplash.com/photo-1617814076367-b759c7d7e738?auto=format&fit=crop&w=600&q=80", description: "Timeless elegance, supreme highway comfort and executive prestige." },
+  { name: "Sedan", count: 5, icon: "fa-car-side", image: "https://images.unsplash.com/photo-1555215695-3004980ad54e?auto=format&fit=crop&w=600&q=80", description: "Timeless elegance, supreme highway comfort and executive prestige." },
   { name: "SUV", count: 8, icon: "fa-truck-monster", image: "https://images.unsplash.com/photo-1563720223185-11003d516935?auto=format&fit=crop&w=600&q=80", description: "Elevated road visibility, supreme cabin space, and all-terrain authority." },
   { name: "Coupe", count: 3, icon: "fa-car", image: "https://images.unsplash.com/photo-1603584173870-7f23fdae1b7a?auto=format&fit=crop&w=600&q=80", description: "Sleek aerodynamic sloping rooflines and driver-focused exhilaration." },
   { name: "Hatchback", count: 1, icon: "fa-compact-disc", image: "https://images.unsplash.com/photo-1590362891991-f776e747a588?auto=format&fit=crop&w=600&q=80", description: "Nimble city agility, modular cargo flexibility, and modern practicality." },
   { name: "Convertible", count: 1, icon: "fa-wind", image: "https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=600&q=80", description: "Pure open-air freedom, sensory exhaust notes, and coastal cruising bliss." },
   { name: "Sports Car", count: 3, icon: "fa-gauge-high", image: "https://images.unsplash.com/photo-1614162692292-7ac56d7f7f1e?auto=format&fit=crop&w=600&q=80", description: "Hair-raising acceleration, race-tuned chassis, and razor-sharp handling." },
-  { name: "Luxury Car", count: 7, icon: "fa-gem", image: "https://images.unsplash.com/photo-1617814076367-b759c7d7e738?auto=format&fit=crop&w=600&q=80", description: "First-class passenger sanctuaries with ultra-refined leather and active noise cancellation." },
+  { name: "Luxury Car", count: 7, icon: "fa-gem", image: "https://images.unsplash.com/photo-1563720223185-11003d516935?auto=format&fit=crop&w=600&q=80", description: "First-class passenger sanctuaries with ultra-refined leather and active noise cancellation." },
   { name: "Electric Vehicle", count: 2, icon: "fa-bolt-lightning", image: "https://images.unsplash.com/photo-1580273916550-e323be2ae537?auto=format&fit=crop&w=600&q=80", description: "Zero emissions, instant maximum torque delivery, and whispering silent journeys." }
 ];
 
@@ -924,16 +924,9 @@ window.CarService = {
               </div>
             </div>
             
-            <div class="mt-auto pt-3 border-top d-flex gap-2 align-items-center justify-content-between">
-              <a href="car-details.html?id=${car.id}" class="btn btn-outline-gold w-100 py-2 fw-semibold">
-                View Details <i class="fa-solid fa-arrow-right ms-1"></i>
-              </a>
-              <a href="https://wa.me/8801700000000?text=Hello%20Mamun%20Autos,%20I%20am%20interested%20in%20the%20${encodeURIComponent(car.brand + ' ' + car.model + ' (' + car.year + ')')}" 
-                 target="_blank" 
-                 class="btn btn-whatsapp-icon" 
-                 title="Quick WhatsApp Inquiry" 
-                 aria-label="WhatsApp Inquiry">
-                <i class="fa-brands fa-whatsapp"></i>
+            <div class="mt-auto pt-3 border-top">
+              <a href="car-details.html?id=${car.id}" class="btn btn-outline-gold w-100 py-2 fw-semibold d-flex align-items-center justify-content-center">
+                <span>View Details</span> <i class="fa-solid fa-arrow-right ms-2"></i>
               </a>
             </div>
           </div>
